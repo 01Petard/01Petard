@@ -73,6 +73,9 @@
 <!-- metrics 基础资料 -->
 <img src="./github-metrics/base.svg" />
 
+<img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+  <div>&nbsp;</div>
+
 <div align="center" >
 <!--  skill badge 技能徽章 -->
 
