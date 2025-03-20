@@ -43,27 +43,25 @@ jobs:
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/isocalendar.fullyear.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          # 不添加基础信息
-          base: ""
-          # 使用此插件
-          plugin_isocalendar: yes
-          # 设置成显示整年
-          plugin_isocalendar_duration: full-year
+          filename: github-metrics/isocalendar.fullyear.svg  # 输出文件路径
+          token: ${{ secrets.METRICS_TOKEN }}                # 使用 GitHub Token 授权
+          base: ""                                           # 禁用所有基础模块（如个人资料、活动统计等）
+          plugin_isocalendar: yes                            # 启用「等距提交日历」插件
+          plugin_isocalendar_duration: full-year             # 设置日历显示完整一年的提交记录
 
       # 🈷️ Languages activity
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/languages.indepth.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
-            gnuplot
-          plugin_languages_indepth: yes
-          plugin_languages_details: lines, bytes-size
-          plugin_languages_limit: 4
-          plugin_languages_analysis_timeout: 15
+          filename: github-metrics/languages.indepth.svg    # 输出文件路径
+          token: ${{ secrets.METRICS_TOKEN }}               # 使用 GitHub Token 授权
+          base: ""                                          # 禁用所有基础模块
+          plugin_languages: yes                             # 启用「代码语言分析」插件
+          plugin_languages_skipped: >-                      # 忽略特定仓库
+            blog-hexo-butterfly, 01Petard/01Petard.github.io, 01Petard/blog-vue-vitepress
+          plugin_languages_ignored: >-                      # 忽略指定语言的统计
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+          plugin_languages_indepth: yes                     # 启用深入分析模式
+          plugin_languages_details: lines, bytes-size       # 显示代码行数和占用存储大小
+          plugin_languages_limit: 4                         # 仅显示前 4 种主要语言
+          plugin_languages_analysis_timeout: 15             # 单仓库分析超时时间（秒）
