@@ -12,7 +12,7 @@
     <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
   </picture>
 
-  <!-- for beauty 留个空行好看点 -->
+  <!-- for beauty 留个空行 -->
   <div>&nbsp;</div>
 
   <!-- profile logo 个人资料徽标 -->
@@ -45,7 +45,7 @@
           <img align="right" width="88" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550245.png" />
           <ul>
             <li>
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2024-02-10 —— now
+              <a href="https://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2024-02-10 —— now
               <ul>
                 <li>工作岗位：Java 后端开发工程师</li>
                 <li>工作内容：负责公司信息化系统的建设</li>
@@ -65,8 +65,18 @@
     </table>
   </div>
 
+
   <!-- ########################################## 分割 ########################################## -->
   <img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+
+  <!-- for beauty 留个空行 -->
+  <div>&nbsp;</div>
+
+  <!-- metrics 基础资料 -->
+  <img src="./github-metrics/base.svg" alt="基本信息"/>
+
+  <!-- for beauty 留个空行 -->
+  <div>&nbsp;</div>
 
   <div align="center">
     <!-- GitHub metrics 信息指标 -->
@@ -82,18 +92,15 @@
     </table>
   </div>
 
-
-
-</div>
-
-
 <!-- GitHub Activity Graph GitHub 活动图 -->
 ![shaoting0730's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact) <br/>
 
 
-<!-- metrics 基础资料 -->
-<img src="./github-metrics/base.svg"  alt="基本信息"/>
+<!-- ########################################## 分割 ########################################## -->
+<img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
 
+<!-- for beauty 留个空行 -->
+<div>&nbsp;</div>
 
 <div align="center" >
 
@@ -118,6 +125,7 @@
 
 </div>
 
+</div>
 
 <div>
 <!-- just img 图片 -->
