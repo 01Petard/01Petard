@@ -57,11 +57,9 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}               # 使用 GitHub Token 授权
           base: ""                                          # 禁用所有基础模块
           plugin_languages: yes                             # 启用「代码语言分析」插件
-          plugin_languages_skipped: >-                      # 忽略特定仓库
-            blog-hexo-butterfly, 01Petard/01Petard.github.io, 01Petard/blog-vue-vitepress
           plugin_languages_ignored: >-                      # 忽略指定语言的统计
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-          plugin_languages_indepth: yes                     # 启用深入分析模式
+          plugin_languages_indepth: no                      # 启用深入分析模式
           plugin_languages_details: lines, bytes-size       # 显示代码行数和占用存储大小
           plugin_languages_limit: 4                         # 仅显示前 4 种主要语言
           plugin_languages_analysis_timeout: 15             # 单仓库分析超时时间（秒）
