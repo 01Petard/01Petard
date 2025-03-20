@@ -18,7 +18,6 @@
     <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
   </picture>
 
-
   <!-- for beauty 留个空行好看点 -->
 
   <div>&nbsp;</div>
@@ -33,7 +32,6 @@
     <img src="https://komarev.com/ghpvc/?username=01Petard&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
 <table>
 
-<tr><td>
 
 ### 🤺 About Me
 
@@ -56,7 +54,7 @@
   - 工作岗位：Java  后端开发工程师
   - 工作内容：负责公司信息化系统的建设
 
-<img align="right" width="50" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
+<img align="right" width="40" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
 
 - [杭州施强教育科技有限公司](http://www.cnstrong.cn/) &emsp; 📌 2024-06-14 —— 2024-12-14
   - 工作岗位：Java 后端开发实习生
@@ -66,17 +64,16 @@
 
 </table>
 
-
 <!-- ########################################## 分割 ########################################## -->
 <img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+
+  <div>&nbsp;</div>
 
 <div align="center">
 <!-- metrics 基础资料 -->
 <img src="./github-metrics/base.svg" />
-
 <div align="center" >
 <!--  skill badge 技能徽章 -->
-
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat)
 ![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
 ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
@@ -87,6 +84,7 @@
 ![Qt Badge](https://img.shields.io/badge/Qt-41CD52?logo=qt&logoColor=fff&style=flat)
 ![MongoDB Badge](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat)
 ![Django Badge](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat)
+
 
 ![C Badge](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=fff&style=flat)
 ![C++ Badge](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=fff&style=flat)
@@ -123,7 +121,6 @@
       <td><img src="./github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
   </tr>
 </table>
-
 <div>
 <!-- just img 图片 -->
 <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/icon.png" />
