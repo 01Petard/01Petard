@@ -1,28 +1,3 @@
-## Hi there 👋
-
-<!--
-**01Petard/01Petard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=01Petard)
-
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=01Petard)
-
-
 <div align="center">
 
 
@@ -115,7 +90,7 @@ Here are some ideas to get you started:
 </div>
 
 <!-- metrics 基础资料 -->
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/github-metrics/base.svg" />
+<img src="./github-metrics/base.svg" />
 
 <!-- GitHub Activity Graph GitHub 活动图 -->
 
@@ -243,8 +218,8 @@ Here are some ideas to get you started:
 
 <table>
   <tr>
-      <td><img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
-      <td><img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
+      <td><img src="./github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
+      <td><img src="./github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
   </tr>
 </table>
 
