@@ -42,7 +42,7 @@
       <tr>
         <td>
           <h3>🏢 Work Experience</h3>
-          <img align="right" width="80" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550245.png" />
+          <img align="right" width="50" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550245.png" />
           <ul>
             <li>
               <a href="https://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2024-02-10 —— now
@@ -52,7 +52,7 @@
               </ul>
             </li>
             <li>
-              <img align="right" width="40" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
+              <img align="right" width="50" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
               <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp; 📌 2024-06-14 —— 2024-12-14
               <ul>
                 <li>工作岗位：Java 后端开发实习生</li>
