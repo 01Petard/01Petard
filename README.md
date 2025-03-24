@@ -42,7 +42,7 @@
       <tr>
         <td>
           <h3>🏢 Work Experience</h3>
-          <img align="right" width="88" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550245.png" />
+          <img align="right" width="80" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550245.png" />
           <ul>
             <li>
               <a href="https://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2024-02-10 —— now
