@@ -32,7 +32,7 @@
       <tr>
         <td>
           <h3>🤺 About Me</h3>
-          <img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/jobs.png" />
+          <img align="right" width="80" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/jobs.png" />
           <p>&emsp;&emsp;嗨，你好，我是小黄同学。热爱编程、数码、游戏。</p>
           <p>&emsp;&emsp;热爱软件工程和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
           <p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
@@ -52,7 +52,7 @@
               </ul>
             </li>
             <li>
-              <img align="right" width="80" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
+              <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
               <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp; 📌 2024-06-14 —— 2024-12-14
               <ul>
                 <li>工作岗位：Java 后端开发实习生</li>
