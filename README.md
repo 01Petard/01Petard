@@ -52,7 +52,7 @@
               </ul>
             </li>
             <li>
-              <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
+              <img align="right" width="50" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
               <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp; 📌 2024-06-14 —— 2024-12-14
               <ul>
                 <li>工作岗位：Java 后端开发实习生</li>
