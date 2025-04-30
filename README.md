@@ -47,7 +47,7 @@
             <li>
               <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2024-02-10 —— now
               <ul>
-                <li>工作岗位：Java 后端开发工程师</li>
+                <li>工作岗位：软件开发工程师</li>
                 <li>工作内容：负责公司信息化、数字化业务的建设与维护</li>
               </ul>
             </li>
@@ -55,7 +55,7 @@
               <img align="right" width="56" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
               <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp; 📌 2024-06-14 —— 2024-12-14
               <ul>
-                <li>工作岗位：Java 后端开发实习生</li>
+                <li>工作岗位：Java开发工程师</li>
                 <li>工作内容：参与“乐课网”App的开发与维护工作</li>
               </ul>
             </li>
