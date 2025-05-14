@@ -21,10 +21,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="303.21646958919564" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="303.21646958919564" y="0" width="87.38653718155231" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="390.603006770748" y="0" width="61.17306185105081" height="8" fill="#178600"/>
-                    <rect mask="url(#languages-bar)" x="451.7760686217988" y="0" width="8.223931378201215" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="303.83951398112214" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="303.83951398112214" y="0" width="87.03927052810866" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="390.8787845092308" y="0" width="60.92996531518762" height="8" fill="#178600"/>
+                    <rect mask="url(#languages-bar)" x="451.80874982441844" y="0" width="8.191250175581583" height="8" fill="#3572A5"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -36,7 +36,7 @@
                                 Java
                             </div>
                             <small>
-                                <div>17.4 MB</div>
+                                <div>17.5 MB</div>
                             </small>
                         </div>
                         <div class="field language details">
