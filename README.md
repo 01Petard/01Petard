@@ -44,7 +44,7 @@
           <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550245.png" />
           <ul>
             <li>
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2024-02-10 —— now
+              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2025-02-10 —— now
               <ul>
                 <li>工作岗位：软件开发工程师</li>
                 <li>工作内容：负责公司信息化、数字化业务的建设与维护</li>
