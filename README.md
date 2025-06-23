@@ -52,7 +52,7 @@
             </li>
             <li>
               <img align="right" width="56" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp; 📌 2024-06 —— 2024-12
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp; 📌 2024-06 —— 2024-12
               <ul>
                 <li>工作岗位：Java开发工程师</li>
                 <li>工作内容：参与“乐课网”App的开发与维护工作</li>
