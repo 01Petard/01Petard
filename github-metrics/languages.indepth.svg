@@ -21,10 +21,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="302.6717665812656" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="302.6717665812656" y="0" width="89.91000174504313" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="392.58176832630875" y="0" width="59.40754443378132" height="8" fill="#178600"/>
-                    <rect mask="url(#languages-bar)" x="451.98931276009006" y="0" width="8.010687239909965" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="302.5674475785164" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="302.5674475785164" y="0" width="89.87901331878467" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="392.4464608973011" y="0" width="59.3870689997456" height="8" fill="#178600"/>
+                    <rect mask="url(#languages-bar)" x="451.8335298970467" y="0" width="8.166470102953308" height="8" fill="#3572A5"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -71,7 +71,7 @@
                                 Python
                             </div>
                             <small>
-                                <div>473 kB</div>
+                                <div>482 kB</div>
                             </small>
                         </div>
                     </section>
