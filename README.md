@@ -44,7 +44,7 @@
           <ul>
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025-08 —— now
+              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.09 —— now
               <ul>
                 <li>工作岗位：全栈开发工程师</li>
                 <li>工作内容：负责公司的中后台数据支撑系统的建设与维护</li>
