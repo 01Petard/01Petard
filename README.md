@@ -10,7 +10,7 @@
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/developer.svg" height="225px" />
     <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
   </picture>
-       
+      
   <!-- for beauty 留个空行 -->
   <div>&nbsp;</div>
  
@@ -46,7 +46,7 @@
             <li>
               <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.09 —— now
               <ul>
-                <li>工作岗位：全栈开发工程师</li>
+                <li>工作岗位：服务端开发</li>
                 <li>工作内容：负责公司的中后台数据支撑系统的建设与维护</li>
               </ul>
             </li>
@@ -54,7 +54,7 @@
               <img align="right" width="56" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
               <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.08
               <ul>
-                <li>工作岗位：后端开发工程师</li>
+                <li>工作岗位：信息化开发</li>
                 <li>工作内容：负责公司的信息化发展，承担数字化业务系统的建设与维护</li>
               </ul>
             </li>
@@ -62,7 +62,7 @@
               <img align="right" width="56" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
               <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.12
               <ul>
-                <li>工作岗位：后端开发工程师</li>
+                <li>工作岗位：Java开发工程师</li>
                 <li>工作内容：参与“乐课网”平台系统功能板块的迭代开发</li>
               </ul>
             </li>
