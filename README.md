@@ -23,7 +23,7 @@
       <img src="https://img.shields.io/badge/Doc-文档-blue" />
     </a>&emsp;
     <a href="https://fav.bugstack.icu/">
-      <img src="https://img.shields.io/badge/Favorite-收藏夹-yellow" />
+      <img src="https://img.shields.io/badge/Favorite-收藏夹-CDBB87" />
     </a>&emsp;
     <a href="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/wechat.jpg">
       <img src="https://img.shields.io/badge/WeChat-微信-07c160" />
