@@ -19,6 +19,12 @@
     <a href="https://www.bugstack.icu/">
       <img src="https://img.shields.io/badge/Website-博客-8c36db" />
     </a>&emsp;
+    <a href="https://doc.bugstack.icu/">
+      <img src="https://img.shields.io/badge/Doc-文档-blue" />
+    </a>&emsp;
+    <a href="https://fav.bugstack.icu/">
+      <img src="https://img.shields.io/badge/Favorite-收藏夹-yellow" />
+    </a>&emsp;
     <a href="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/wechat.jpg">
       <img src="https://img.shields.io/badge/WeChat-微信-07c160" />
     </a>&emsp;
