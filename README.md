@@ -17,7 +17,7 @@
   <!-- profile logo 个人资料徽标 -->
   <div>
     <a href="https://www.bugstack.icu/">
-      <img src="https://img.shields.io/badge/Website-博客-8c36db" />
+      <img src="https://img.shields.io/badge/Website-个人页-825089" />
     </a>&emsp;
     <a href="https://doc.bugstack.icu/">
       <img src="https://img.shields.io/badge/Doc-文档-blue" />
