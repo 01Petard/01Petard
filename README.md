@@ -16,7 +16,7 @@
   
   <!-- profile logo 个人资料徽标 -->
   <div>
-    <a href="https://01petard.github.io/blog-vue-vitepress/">
+    <a href="https://www.bugstack.icu/">
       <img src="https://img.shields.io/badge/Website-博客-8c36db" />
     </a>&emsp;
     <a href="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/wechat.jpg">
