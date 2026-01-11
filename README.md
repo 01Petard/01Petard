@@ -249,7 +249,7 @@
     </table>
   </div>
 <!-- GitHub Activity Graph GitHub 活动图 -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" alt="github activity graph" /> <br/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" alt="github activity graph" />
 
 <div>
 <img width=100% src="./img/footer.svg" alt="尾部图"/>
