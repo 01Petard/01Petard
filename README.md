@@ -119,23 +119,10 @@
 <div>&nbsp;</div>
 
 <div align="center" >
-  <!--  skill badge 技能徽章 -->
-
-## 前端
-
-  ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat)
-  ![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
-  ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
-  ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
-  ![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)
-  ![Vite Badge](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat)
-  ![Vue.js Badge](https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff&style=flat)
-
-
-
-
+  <!--  skill badge 技能徽章 --> 
 </div>
-### 后端技术栈
+
+<h3>后端技术栈</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-Spring-6DB33F?logo=Spring&logoColor=FFF" alt="Spring" style="display: inline-block;" />&nbsp;
@@ -179,11 +166,16 @@
   <img src="https://img.shields.io/badge/-Android-C0C0C0?logo=Android&logoColor=3DDC84" alt="Android" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Go-DCDCDC?logo=Go&logoColor=00ADD8" alt="Go" style="display: inline-block;" />&nbsp;
 </p>
-
-
-### 前端技术栈
+<h3>前端技术栈</h3>
 
 <p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat" alt="HTML5 Badge"/>&nbsp;
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat" alt="CSS3 Badge"/>&nbsp;
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat" alt="JavaScript Badge"/>&nbsp;
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat" alt="TypeScript Badge"/>&nbsp;
+  <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat" alt="Node.js Badge"/>&nbsp;
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat" alt="Vite Badge"/>&nbsp;
+  <img src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff&style=flat" alt="Vue.js Badge"/>&nbsp;
   <img src="https://img.shields.io/badge/-Vue3-C0C0C0?logo=Vue.js&logoColor=4FC08D" alt="Vue3" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-TypeScript-C0C0C0?logo=TypeScript&logoColor=3178C6" alt="TypeScript" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Arco%20Design-C0C0C0?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMyAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS4zNzc1NCAxNi45Nzk1TDEyLjc0OTggOS40MzAyN0MxNC43MTYzIDcuNDE2NjMgMTcuOTQyOCA3LjM3ODM3IDE5Ljk1NjQgOS4zNDQ4MkMxOS45ODUyIDkuMzcyOTcgMjAuMDEzNyA5LjQwMTQ1IDIwLjA0MTggOS40MzAyN0wyMC4xMjIxIDkuNTEyNDNDMjIuMTA0OSAxMS41NDI5IDIyLjEwNDkgMTQuNzg0NyAyMC4xMjIxIDE2LjgxNTJMMTIuNzQ5OCAyNC4zNjQ0QzEwLjc4MzQgMjYuMzc4IDcuNTU2ODYgMjYuNDE2MyA1LjU0MzIyIDI0LjQ0OThDNS41MTQ0IDI0LjQyMTcgNS40ODU5MiAyNC4zOTMyIDUuNDU3NzcgMjQuMzY0NEw1LjM3NzU0IDI0LjI4MjJDMy4zOTQ2OCAyMi4yNTE4IDMuMzk0NjggMTkuMDA5OSA1LjM3NzU0IDE2Ljk3OTVaIiBmaWxsPSIjMTJEMkFDIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMDQ3OSA5LjQzMDM0TDI3LjMzOTkgMTYuODk3NEMyOS4zNjc0IDE4Ljk3MzUgMjkuMzY3NCAyMi4yODgzIDI3LjMzOTkgMjQuMzY0NEMyNS4zNzM1IDI2LjM3ODEgMjIuMTQ3IDI2LjQxNjMgMjAuMTMzMyAyNC40NDk5QzIwLjEwNDUgMjQuNDIxNyAyMC4wNzYgMjQuMzkzMyAyMC4wNDc5IDI0LjM2NDRMMTIuNzU1OCAxNi44OTc0QzEwLjcyODQgMTQuODIxMyAxMC43Mjg0IDExLjUwNjUgMTIuNzU1OCA5LjQzMDM0QzE0LjcyMjMgNy40MTY3IDE3Ljk0ODggNy4zNzg0NCAxOS45NjI0IDkuMzQ0ODlDMTkuOTkxMiA5LjM3MzA0IDIwLjAxOTcgOS40MDE1MiAyMC4wNDc5IDkuNDMwMzRaIiBmaWxsPSIjMzA3QUYyIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTMyMSA5LjUyMTYzTDIzLjY4NTEgMTMuMTU5OUwxNi4zOTMxIDIwLjYyN0w5LjEwMTAzIDEzLjE1OTlMMTIuNjU0MSA5LjUyMTYzQzE0LjY3MDcgNy40NTY2NCAxNy45Nzk0IDcuNDE3NCAyMC4wNDQ0IDkuNDM0QzIwLjA3NCA5LjQ2Mjg2IDIwLjEwMzIgOS40OTIwNyAyMC4xMzIxIDkuNTIxNjNaIiBmaWxsPSIjMDA1N0ZFIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDAiPgo8cmVjdCB3aWR0aD0iMjYiIGhlaWdodD0iMTkiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjUgNykiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K&logoColor=FFF" alt="Arco Design" style="display: inline-block;" />&nbsp;
@@ -205,8 +197,7 @@
   <img src="https://img.shields.io/badge/-Less-D3D3D3?logo=Less&logoColor=1D365D" alt="Less" style="display: inline-block;" />&nbsp;
 </p>
 
-
-### DevOps
+<h3>DevOps</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=FFF" alt="Git" style="display: inline-block;" />&nbsp;
@@ -222,9 +213,7 @@
   <img src="https://img.shields.io/badge/-CentOS-262577?logo=CentOS&logoColor=FFF" alt="CentOS" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Ubuntu-E95420?logo=Ubuntu&logoColor=FFF" alt="Ubuntu" style="display: inline-block;" />&nbsp;
 </p>
-
-
-### 运维技术栈
+<h3>运维技术栈</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-阿里云-FF6A00?logo=Alibaba-Cloud&logoColor=FFF" alt="阿里云" style="display: inline-block;" />&nbsp;
@@ -235,17 +224,13 @@
   <img src="https://img.shields.io/badge/-Ansible-FFF?logo=Ansible&logoColor=EE0000" alt="Ansible" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Lua-FFF?&logo=Lua&logoColor=2C2D72" alt="Lua" style="display: inline-block;" />&nbsp;
 </p>
-
-
-### 测试技术栈
+<h3>测试技术栈</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-Postman-FF6C37?logo=Postman&logoColor=FFF" alt="Postman" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-JMeter-D3D3D3?logo=Apache-JMeter&logoColor=D22128" alt="JMeter" style="display: inline-block;" />&nbsp;
 </p>
-
-
-### 开发工具
+<h3>开发工具</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-Intellij%20IDEA-ff2757?logo=Intellij-IDEA&logoColor=ff8100" alt="Intellij IDEA" style="display: inline-block;" />&nbsp;
@@ -253,9 +238,7 @@
   <img src="https://img.shields.io/badge/-Cursor-2C2255?logo=Cursor&logoColor=FFF" alt="Cursor" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-VSCode-FFF?logo=Visual-Studio-Code&logoColor=1f9cf0" alt="VSCode" style="display: inline-block;" />&nbsp;
 </p>
-
-
-### 其他
+<h3>其他</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-Markdown-000?logo=Markdown&logoColor=FFF" alt="Markdown" style="display: inline-block;" />&nbsp;
