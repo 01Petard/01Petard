@@ -225,6 +225,9 @@
 
 </div>
 
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/icon.png" alt="just img"/>
+</div>
 
   <!-- ########################################## 分割 ########################################## -->
   <img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
@@ -255,7 +258,5 @@
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" alt="github activity graph" /> <br/>
 
 <div>
-<!-- just img 图片 -->
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/icon.png"  alt="just img"/>
 <img width=100% src="./img/footer.svg" alt="尾部图"/>
 </div>
