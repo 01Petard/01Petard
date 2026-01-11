@@ -252,8 +252,7 @@
     </table>
   </div>
 <!-- GitHub Activity Graph GitHub 活动图 -->
-![shaoting0730's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact) <br/>
-
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" alt="github activity graph" /> <br/>
 
 <div>
 <!-- just img 图片 -->
