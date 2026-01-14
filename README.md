@@ -68,7 +68,7 @@
             </li>
             <li>
               <img align="right" width="56" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.12
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10
               <ul>
                 <li>工作岗位：Saas系统后端开发</li>
                 <li>工作内容：参与“乐课网”平台系统功能板块的迭代开发</li>
