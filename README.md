@@ -232,7 +232,9 @@
   <img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
 
   <!-- metrics 基础资料 -->
-  <img src="./github-metrics/base.svg" alt="基本信息"/>
+  <div align="center">
+    <img src="./github-metrics/base.svg" alt="基本信息"/>
+  </div>
 
   <div align="center">
     <!-- GitHub metrics 信息指标 -->
