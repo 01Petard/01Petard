@@ -50,9 +50,17 @@
         <td>
           <h3>🏢 Work Experience</h3>
           <ul>
+            <img align="right" width="80" src="https://www.shinemo.com/shinemo-office/img/logo.787eab8f.gif" />
+            <li>
+              <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp; 📌 2026.02 —— now
+              <ul>
+                <li>工作岗位：后端开发</li>
+                <li>工作内容：负责公司的AI产品业务线开发</li>
+              </ul>
+            </li>
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.09 —— now
+              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.09 —— 2026.01
               <ul>
                 <li>工作岗位：中后台业务开发</li>
                 <li>工作内容：负责公司的中后台数据中台的建设与维护、新业务的探索</li>
