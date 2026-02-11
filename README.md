@@ -54,6 +54,7 @@
             <li>
               <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— now
               <ul>
+                <li>岗位领域：AI应用、跨境电商</li>
                 <li>工作岗位：后端开发</li>
                 <li>工作内容：负责公司的AI产品业务线开发</li>
               </ul>
@@ -62,6 +63,7 @@
             <li>
               <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
               <ul>
+                <li>岗位领域：医疗健康+保健器材</li>
                 <li>工作岗位：中后台业务开发</li>
                 <li>工作内容：负责公司的中后台数据中台的建设与维护、新业务的探索</li>
               </ul>
@@ -70,6 +72,7 @@
               <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
               <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.01 —— 2025.06
               <ul>
+                <li>岗位领域：制造业</li>
                 <li>工作岗位：信息化与数字化软件开发</li>
                 <li>工作内容：负责公司的信息化发展，承担数字化业务系统的建设与维护</li>
               </ul>
@@ -78,6 +81,7 @@
               <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
               <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.12
               <ul>
+                <li>岗位领域：互联网+教育</li>
                 <li>工作岗位：Saas系统后端开发</li>
                 <li>工作内容：参与“乐课网”平台系统功能板块的迭代开发</li>
               </ul>
