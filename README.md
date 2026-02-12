@@ -61,7 +61,7 @@
             </li> -->
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
+              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— now
               <ul>
                 <li>岗位领域：医疗健康+保健器材</li>
                 <li>工作岗位：中后台业务开发</li>
