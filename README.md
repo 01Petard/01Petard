@@ -52,7 +52,7 @@
           <ul>
             <li>
               <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.01 —— 2025.06
+              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
               <ul>
                 <li>岗位领域：制造业</li>
                 <li>工作岗位：信息化与数字化软件开发</li>
@@ -61,7 +61,7 @@
             </li>
             <li>
               <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.12
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10
               <ul>
                 <li>岗位领域：互联网+教育</li>
                 <li>工作岗位：Saas系统后端开发</li>
