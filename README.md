@@ -50,18 +50,9 @@
         <td>
           <h3>🏢 Work Experience</h3>
           <ul>
-<img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
-            <li>
-              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
-              <ul>
-                <li>岗位领域：医疗健康+保健器材</li>
-                <li>工作岗位：中后台业务开发</li>
-                <li>工作内容：负责公司的中后台数据中台的建设与维护、新业务的探索</li>
-              </ul>
-            </li>
             <li>
               <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06 （实习）
+              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
               <ul>
                 <li>岗位领域：物联网+车载设备</li>
                 <li>工作岗位：信息化与数字化软件开发</li>
@@ -70,7 +61,7 @@
             </li>
             <li>
               <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10 （实习）
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10
               <ul>
                 <li>岗位领域：互联网+教育</li>
                 <li>工作岗位：Saas系统后端开发</li>
