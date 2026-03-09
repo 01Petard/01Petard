@@ -46,31 +46,6 @@
           <p>&emsp;&emsp;<strong>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong></p>
         </td>
       </tr>
-      <tr>
-        <td>
-          <h3>🏢 Work Experience</h3>
-          <ul>
-            <li>
-              <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
-              <ul>
-                <li>岗位领域：物联网+车载设备</li>
-                <li>工作岗位：信息化与数字化软件开发</li>
-                <li>工作内容：负责公司的信息化发展，承担数字化业务系统的建设与维护</li>
-              </ul>
-            </li>
-            <li>
-              <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10
-              <ul>
-                <li>岗位领域：互联网+教育</li>
-                <li>工作岗位：Saas系统后端开发</li>
-                <li>工作内容：参与“乐课网”平台系统功能板块的迭代开发</li>
-              </ul>
-            </li>
-          </ul>
-        </td>
-      </tr>
     </table>
   </div>
 
