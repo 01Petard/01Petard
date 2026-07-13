@@ -1,4 +1,4 @@
-<div align="center"> 
+<div align="center">
   <!-- 顶部图 -->
   <img width=100% src="./img/header.svg" alt="头部图" />
   <!-- dynamic typing effect 动态打字效果 -->
