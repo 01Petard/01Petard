@@ -35,7 +35,7 @@
     </a>&emsp;
     <!-- visitor -->
     <img src="https://komarev.com/ghpvc/?username=01Petard&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
-    <table>
+<table>
       <tr>
         <td>
           <h3>🤺 About Me</h3>
@@ -44,6 +44,58 @@
           <p>&emsp;&emsp;热爱软件工程和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
           <p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
           <p>&emsp;&emsp;<strong>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>🏢 Work Experience</h3>
+          <ul>
+            <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
+            <li>
+              <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.04 —— now
+              <ul>
+                <li>岗位领域：AI应用、数据分析、工业智能化</li>
+                <li>工作岗位：后端架构+业务开发、客户对接</li>
+                <li>工作内容：负责开拓与落地国内大客户信创项目，并协助参与相关的研究项目结题</li>
+              </ul>
+            </li>
+            <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202602112016407.png" />
+            <li>
+              <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— 2026.03
+              <ul>
+                <li>岗位领域：AI应用、跨境电商</li>
+                <li>工作岗位：后端开发</li>
+                <li>工作内容：负责公司的AI产品业务线开发</li>
+              </ul>
+            </li>
+            <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
+            <li>
+              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
+              <ul>
+                <li>岗位领域：互联网、医疗保健</li>
+                <li>工作岗位：中后台业务开发</li>
+                <li>工作内容：负责公司的大健康业务、数据中台的建设与维护、对接大客户方案</li>
+              </ul>
+            </li>
+            <li>
+              <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
+              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
+              <ul>
+                <li>岗位领域：汽车、机器人</li>
+                <li>工作岗位：信息化与数字化软件开发</li>
+                <li>工作内容：负责公司的信息化发展，承担数字化业务系统的建设与维护</li>
+              </ul>
+            </li>
+            <li>
+              <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10
+              <ul>
+                <li>岗位领域：互联网、在线教育</li>
+                <li>工作岗位：Saas系统后端开发</li>
+                <li>工作内容：参与“乐课网”平台系统功能板块的迭代开发</li>
+              </ul>
+            </li>
+          </ul>
         </td>
       </tr>
     </table>
