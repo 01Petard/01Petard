@@ -191,7 +191,7 @@
 
 
 
-<h3>DevOps</h3>
+<h3>DevOps & CI/CD</h3>
 
 <p>
   <img src="https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=FFF" alt="Git" style="display: inline-block;" />&nbsp;
