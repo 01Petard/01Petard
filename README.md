@@ -65,7 +65,7 @@
               <ul>
                 <li>岗位领域：AI应用、跨境电商</li>
                 <li>工作岗位：后端开发</li>
-                <li>工作内容：负责公司的AI产品业务线开发</li>
+                <li>工作内容：参与公司的智能店铺、大模型编程平台项目的开发</li>
               </ul>
             </li>
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
