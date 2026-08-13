@@ -88,7 +88,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.06 —— 2024.10
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.10
               <ul>
                 <li>岗位领域：互联网、在线教育</li>
                 <li>工作岗位：后端开发（实习）</li>
