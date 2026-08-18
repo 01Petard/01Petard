@@ -54,7 +54,7 @@
             <li>
               <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— now
               <ul>
-                <li>岗位领域：微电子、先进制造</li>
+                <li>岗位领域：微电子、高端装备制造</li>
                 <li>工作岗位：后端架构、开发，项目管理</li>
                 <li>工作内容：负责开拓与落地国内大客户信创项目，并协助参与相关的研究项目落地实施</li>
               </ul>
@@ -63,7 +63,7 @@
             <li>
               <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— 2026.03
               <ul>
-                <li>岗位领域：AI应用、跨境电商</li>
+                <li>岗位领域：大模型平台、跨境电商</li>
                 <li>工作岗位：后端开发</li>
                 <li>工作内容：参与公司的智能店铺、大模型编程平台项目的开发</li>
               </ul>
@@ -72,7 +72,7 @@
             <li>
               <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
               <ul>
-                <li>岗位领域：互联网、医疗健康</li>
+                <li>岗位领域：互联网、在线医疗、健康管理</li>
                 <li>工作岗位：中后台业务开发、技术支持</li>
                 <li>工作内容：负责公司的大健康业务、数据中台的建设与维护、对接大客户方案</li>
               </ul>
@@ -81,7 +81,7 @@
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
               <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
               <ul>
-                <li>岗位领域：汽车、机器人</li>
+                <li>岗位领域：汽车零部件、工业机器人</li>
                 <li>工作岗位：信息化与数字化软件开发（实习）</li>
                 <li>工作内容：负责公司的信息化发展，承担数字化业务系统的建设与维护</li>
               </ul>
