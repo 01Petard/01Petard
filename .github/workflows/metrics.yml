@@ -1,118 +1,570 @@
-# 此开源项目地址 https://github.com/lowlighter/metrics
+# GitHub 个人主页 Metrics 自动生成
+#
+# 主要生成：
+# 1. github-metrics/base.svg
+#    GitHub 基础信息、提交统计、仓库信息等
+#
+# 2. github-metrics/isocalendar.fullyear.svg
+#    全年 3D Contribution Calendar
+#
+# 3. github-metrics/languages.indepth.svg
+#    基于实际 Git commit 的语言统计
+#
+# 4. github-metrics/activity-graph.svg
+#    最近 GitHub Activity Graph
+#
+# Metrics 项目：
+# https://github.com/lowlighter/metrics
+#
+# Activity Graph 项目：
+# https://github.com/Ashutosh00710/github-readme-activity-graph
 
 name: GitHub Metrics
 
+
+# ============================================================
+# Workflow 触发条件
+# ============================================================
 on:
+
+  # 每天自动执行一次
+  #
+  # GitHub Actions 的 cron 使用 UTC 时间。
+  #
+  # 0 0 * * *
+  # 即 UTC 00:00
+  #
+  # 对应北京时间 UTC+8：
+  # 08:00
   schedule:
     - cron: "0 0 * * *"
-    # https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule
-  workflow_dispatch:
-  push: {branches: ["master", "main"]}
 
+  # 允许在 GitHub Actions 页面手动运行
+  workflow_dispatch:
+
+  # 修改 main / master 后也执行
+  push:
+    branches:
+      - master
+      - main
+
+
+# ============================================================
+# Jobs
+# ============================================================
 jobs:
+
+  # ==========================================================
+  # Job 1
+  #
+  # 使用 lowlighter/metrics 生成 GitHub Metrics
+  # ==========================================================
   github-metrics:
+
     runs-on: ubuntu-latest
+
+    # 使用 GitHub Environment
     environment:
       name: production
+
+    # lowlighter/metrics 会把生成后的 SVG
+    # 自动 commit 回当前仓库，因此必须具有写权限
     permissions:
       contents: write
+
     steps:
-      # 基础信息（顺带了几个小插件）
-      - name: base
+
+      # ======================================================
+      # 1. 基础 GitHub Metrics
+      # ======================================================
+      - name: Base metrics
         uses: lowlighter/metrics@latest
+
         with:
+
+          # --------------------------------------------------
+          # 输出文件
+          # --------------------------------------------------
           filename: github-metrics/base.svg
-          # Your GitHub token
+
+          # --------------------------------------------------
+          # GitHub Personal Access Token
+          #
+          # Repository：
+          # Settings
+          # -> Secrets and variables
+          # -> Actions
+          # -> METRICS_TOKEN
+          # --------------------------------------------------
           token: ${{ secrets.METRICS_TOKEN }}
-          # Options
+
+          # GitHub 用户名
           user: 01Petard
+
+          # 使用经典模板
           template: classic
+
+          # 时区
           config_timezone: Asia/Shanghai
+
+          # --------------------------------------------------
+          # 基础模块
+          #
+          # header
+          #   用户基本信息
+          #
+          # activity
+          #   GitHub Activity
+          #
+          # community
+          #   社区数据
+          #
+          # repositories
+          #   仓库统计
+          # --------------------------------------------------
           base: "header, activity, community, repositories"
-          # 此插件为文档中的 🧮 Repositories traffic
-          plugin_traffic: yes
-          # 此插件为文档中的 👨‍💻 Lines of code changed
+
+          # --------------------------------------------------
+          # Repository Traffic
+          #
+          # 当前关闭。
+          #
+          # 你之前的 Action 日志中出现：
+          #
+          # Insufficient token scopes
+          #
+          # lowlighter/metrics 的 traffic 插件需要 PAT
+          # 具有足够的 repo 权限。
+          #
+          # 如果以后重新生成 METRICS_TOKEN，
+          # 并给 classic PAT 添加 repo scope，
+          # 可以改回：
+          #
+          # plugin_traffic: yes
+          # --------------------------------------------------
+          plugin_traffic: no
+
+          # --------------------------------------------------
+          # Lines of code changed
+          #
+          # 统计代码增加 / 删除情况
+          # --------------------------------------------------
           plugin_lines: yes
-          # 此插件为文档中的 🙋 Introduction
+
+          # --------------------------------------------------
+          # Introduction
+          # --------------------------------------------------
           plugin_introduction: yes
-          # 此插件为文档中的 🎫 Gists
+
+          # --------------------------------------------------
+          # Gists
+          #
+          # 当前不显示
+          # --------------------------------------------------
           plugin_gists: no
 
 
-      # 📅 Isometric commit calendar
-      - name: Full-year calendar
+      # ======================================================
+      # 2. 全年 3D Contribution Calendar
+      # ======================================================
+      - name: Full-year contribution calendar
         uses: lowlighter/metrics@latest
-        with:
-          filename: github-metrics/isocalendar.fullyear.svg  # 输出文件路径
-          token: ${{ secrets.METRICS_TOKEN }}                # 使用 GitHub Token 授权
-          base: ""                                           # 禁用所有基础模块（如个人资料、活动统计等）
-          plugin_isocalendar: yes                            # 启用「等距提交日历」插件
-          plugin_isocalendar_duration: full-year             # 设置日历显示完整一年的提交记录
 
-      # 🈷️ Languages activity
-      - name: Indepth analysis
-        uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/languages.indepth.svg    # 输出文件路径
-          token: ${{ secrets.METRICS_TOKEN }}               # 使用 GitHub Token 授权
-          base: ""                                          # 禁用所有基础模块
-          plugin_languages: yes                             # 启用「代码语言分析」插件
-          plugin_languages_ignored: >-                      # 忽略指定语言的统计
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-          plugin_languages_indepth: yes                     # 启用深入分析模式
-          plugin_languages_details: lines, bytes-size       # 显示代码行数和占用存储大小
-          plugin_languages_limit: 4                         # 仅显示前 4 种主要语言
-          plugin_languages_analysis_timeout: 60             # 单仓库分析超时时间（秒）
-          plugin_languages_analysis_timeout_repositories: 10 # 防止单仓库拖死整个任务
-          plugins_errors_fatal: yes                         # 插件真正出错时直接让 Action 红掉，而不是偷偷生成残缺 SVG
-  
+
+          # 输出文件
+          filename: github-metrics/isocalendar.fullyear.svg
+
+          # GitHub Token
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 不显示默认基础模块
+          # 这里只需要日历
+          base: ""
+
+          # 开启 Isometric Calendar
+          plugin_isocalendar: yes
+
+          # 显示完整一年
+          plugin_isocalendar_duration: full-year
+
+
+      # ======================================================
+      # 3. 编程语言统计
+      #
+      # 使用 indepth 模式：
+      #
+      # Metrics 会：
+      #
+      # 1. Clone GitHub 仓库
+      # 2. 分析 Git commit
+      # 3. 根据 commit author 找属于你的提交
+      # 4. 分析实际修改过的文件
+      # 5. 使用 Linguist 判断编程语言
+      #
+      # 比单纯按照仓库总语言占比更准确。
+      # ======================================================
+      - name: Languages indepth analysis
+        uses: lowlighter/metrics@latest
+
+        with:
+
+          # --------------------------------------------------
+          # 输出文件
+          # --------------------------------------------------
+          filename: github-metrics/languages.indepth.svg
+
+          # GitHub Token
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 明确指定目标 GitHub 用户
+          user: 01Petard
+
+          # 不显示默认基础模块
+          base: ""
+
+          # --------------------------------------------------
+          # 非常重要：
+          #
+          # 指定哪些 Git commit author 属于你。
+          #
+          # 你的公开仓库里目前至少存在：
+          #
+          # GitHub Username：
+          # 01Petard
+          #
+          # Git Author：
+          # huangzexiao
+          #
+          # Git Email：
+          # 1520394133@qq.com
+          #
+          # 如果不加这里，indepth 模式可能 Clone 到仓库，
+          # 但无法识别哪些 Commit 是你的，
+          # 最终生成：
+          #
+          # 0 Languages
+          # No push activity found
+          # --------------------------------------------------
+          commits_authoring: >-
+            01Petard,
+            huangzexiao,
+            1520394133@qq.com
+
+          # --------------------------------------------------
+          # 开启 Languages 插件
+          # --------------------------------------------------
+          plugin_languages: yes
+
+          # --------------------------------------------------
+          # 忽略不想统计的语言
+          #
+          # 这里主要过滤：
+          #
+          # HTML
+          # CSS
+          # Shell
+          # Dockerfile
+          # Makefile
+          # 等辅助性语言
+          # --------------------------------------------------
+          plugin_languages_ignored: >-
+            html,
+            css,
+            tex,
+            less,
+            dockerfile,
+            makefile,
+            qmake,
+            lex,
+            cmake,
+            shell,
+            gnuplot
+
+          # --------------------------------------------------
+          # 开启深入分析模式
+          #
+          # 会实际 Clone 仓库并分析 Commit Patch
+          # --------------------------------------------------
+          plugin_languages_indepth: yes
+
+          # --------------------------------------------------
+          # 显示额外信息
+          #
+          # lines：
+          # 实际代码行数
+          #
+          # bytes-size：
+          # 修改代码字节大小
+          # --------------------------------------------------
+          plugin_languages_details: lines, bytes-size
+
+          # 最多展示 4 种语言
+          plugin_languages_limit: 4
+
+          # --------------------------------------------------
+          # 整体语言分析最长允许 60 秒
+          #
+          # lowlighter/metrics 当前允许范围最大就是 60 秒
+          # --------------------------------------------------
+          plugin_languages_analysis_timeout: 60
+
+          # --------------------------------------------------
+          # 单仓库分析超时
+          #
+          # 避免某个大仓库卡死整个 Workflow
+          # --------------------------------------------------
+          plugin_languages_analysis_timeout_repositories: 10
+
+          # --------------------------------------------------
+          # 如果 Languages 插件真正出现异常
+          # 直接让 Action 失败。
+          #
+          # 防止出现：
+          #
+          # Action 是绿色
+          # 但是实际生成的是残缺 SVG
+          # --------------------------------------------------
+          plugins_errors_fatal: yes
+
+
+  # ==========================================================
+  # Job 2
+  #
+  # Activity Graph
+  #
+  # 原方案：
+  #
+  # curl
+  # https://github-readme-activity-graph.vercel.app/graph
+  #
+  # 当前该公共 Vercel Deployment 返回 HTTP 402。
+  #
+  # 因此改为：
+  #
+  # 1. Clone github-readme-activity-graph
+  # 2. npm ci
+  # 3. npm build
+  # 4. 本地启动服务
+  # 5. localhost 调 /graph
+  # 6. 保存 SVG
+  # 7. Commit 到当前仓库
+  #
+  # 这样就不依赖上游 Vercel 服务。
+  # ==========================================================
   activity-graph:
-    needs: github-metrics
+
+    # 必须等待 Metrics 完成。
+    #
+    # 原因：
+    # github-metrics Job 会向 main 分支提交 SVG。
+    #
+    # 等它完成后，再 Checkout 最新 main，
+    # 可以减少两个 Job 同时 push 导致冲突的概率。
+    needs:
+      - github-metrics
+
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
     steps:
+
+      # ======================================================
+      # Checkout 当前 README 仓库
+      # ======================================================
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+
         with:
+
+          # 明确使用 main 分支
           ref: main
 
-      - name: Fetch activity graph
+
+      # ======================================================
+      # Clone、构建并启动 Activity Graph
+      # ======================================================
+      - name: Build activity graph service
         shell: bash
+
+        # github-readme-activity-graph 内部
+        # 使用 process.env.TOKEN 请求 GitHub GraphQL API
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+
         run: |
           set -euo pipefail
 
-          mkdir -p github-metrics
+          # --------------------------------------------------
+          # Clone Activity Graph 源码
+          #
+          # 使用 depth=1，
+          # 因为这里只需要运行最新版本，
+          # 不需要历史 Git 数据。
+          # --------------------------------------------------
+          git clone \
+            --depth 1 \
+            https://github.com/Ashutosh00710/github-readme-activity-graph.git \
+            /tmp/github-readme-activity-graph
 
+          cd /tmp/github-readme-activity-graph
+
+          # --------------------------------------------------
+          # 根据 package-lock.json 安装固定版本依赖
+          # --------------------------------------------------
+          npm ci
+
+          # --------------------------------------------------
+          # TypeScript 编译
+          #
+          # 本质执行：
+          #
+          # tsc
+          # --------------------------------------------------
+          npm run build
+
+
+      # ======================================================
+      # 启动服务并生成 Activity Graph
+      # ======================================================
+      - name: Generate activity graph
+        shell: bash
+
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+
+        run: |
+          set -euo pipefail
+
+          # SVG 输出目录
+          mkdir -p "$GITHUB_WORKSPACE/github-metrics"
+
+          cd /tmp/github-readme-activity-graph
+
+          # --------------------------------------------------
+          # 后台启动 Express 服务
+          #
+          # 项目默认：
+          #
+          # PORT=5100
+          #
+          # 将日志保存起来，
+          # 如果启动失败可以直接输出。
+          # --------------------------------------------------
+          PORT=5100 npm start > /tmp/activity-graph.log 2>&1 &
+
+          server_pid=$!
+
+          # --------------------------------------------------
+          # Workflow 结束时关闭 Node 服务
+          # --------------------------------------------------
+          cleanup() {
+            kill "$server_pid" 2>/dev/null || true
+          }
+
+          trap cleanup EXIT
+
+          # --------------------------------------------------
+          # 等待 Activity Graph 服务启动
+          #
+          # 最多等待 30 秒
+          # --------------------------------------------------
+          for i in {1..30}; do
+
+            if curl \
+              --fail \
+              --silent \
+              "http://127.0.0.1:5100/" \
+              > /dev/null; then
+
+              echo "Activity Graph service started."
+              break
+            fi
+
+            if [ "$i" -eq 30 ]; then
+              echo "Activity Graph service failed to start."
+              cat /tmp/activity-graph.log
+              exit 1
+            fi
+
+            sleep 1
+
+          done
+
+          # --------------------------------------------------
+          # 创建临时输出文件
+          # --------------------------------------------------
           temp_file="$(mktemp)"
 
+          # --------------------------------------------------
+          # 从本地 Activity Graph 服务获取 SVG
+          #
+          # theme=github-compact
+          # 与你原来的样式保持一致
+          # --------------------------------------------------
           curl \
             --fail \
-            --location \
             --silent \
             --show-error \
-            --retry 3 \
-            --retry-all-errors \
-            "https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" \
+            "http://127.0.0.1:5100/graph?username=01Petard&theme=github-compact" \
             -o "$temp_file"
 
+          # --------------------------------------------------
+          # 简单校验返回内容确实是 SVG
+          #
+          # 防止服务虽然返回 200，
+          # 实际返回的是 HTML / JSON 错误页面。
+          # --------------------------------------------------
           grep -q '<svg' "$temp_file"
 
-          mv "$temp_file" github-metrics/activity-graph.svg
+          # --------------------------------------------------
+          # 写入最终位置
+          # --------------------------------------------------
+          mv \
+            "$temp_file" \
+            "$GITHUB_WORKSPACE/github-metrics/activity-graph.svg"
 
+
+      # ======================================================
+      # 将 Activity Graph Commit 回当前仓库
+      # ======================================================
       - name: Commit activity graph
         shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+        run: |
+          set -euo pipefail
+
+          # GitHub Actions Bot 身份
+          git config \
+            user.name \
+            "github-actions[bot]"
+
+          git config \
+            user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 添加生成后的 SVG
           git add github-metrics/activity-graph.svg
 
+          # --------------------------------------------------
+          # SVG 没有变化时直接结束
+          #
+          # 避免每天制造没有意义的 Commit
+          # --------------------------------------------------
           if git diff --cached --quiet; then
+            echo "Activity graph has no changes."
             exit 0
           fi
 
-          git commit -m "Update activity graph [skip ci]"
+          # --------------------------------------------------
+          # [skip ci]
+          #
+          # 避免这个自动提交再次触发 Workflow，
+          # 导致循环执行。
+          # --------------------------------------------------
+          git commit \
+            -m "Update activity graph [skip ci]"
+
           git push
