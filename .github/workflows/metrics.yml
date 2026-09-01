@@ -59,7 +59,60 @@ jobs:
           plugin_languages: yes                             # 启用「代码语言分析」插件
           plugin_languages_ignored: >-                      # 忽略指定语言的统计
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-          plugin_languages_indepth: no                      # 启用深入分析模式
+          plugin_languages_indepth: yes                     # 启用深入分析模式
           plugin_languages_details: lines, bytes-size       # 显示代码行数和占用存储大小
           plugin_languages_limit: 4                         # 仅显示前 4 种主要语言
-          plugin_languages_analysis_timeout: 15             # 单仓库分析超时时间（秒）
+          plugin_languages_analysis_timeout: 60             # 单仓库分析超时时间（秒）
+          plugin_languages_analysis_timeout_repositories: 10 # 防止单仓库拖死整个任务
+          plugins_errors_fatal: yes                         # 插件真正出错时直接让 Action 红掉，而不是偷偷生成残缺 SVG
+  
+  activity-graph:
+    needs: github-metrics
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch activity graph
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p github-metrics
+
+          temp_file="$(mktemp)"
+
+          curl \
+            --fail \
+            --location \
+            --silent \
+            --show-error \
+            --retry 3 \
+            --retry-all-errors \
+            "https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" \
+            -o "$temp_file"
+
+          grep -q '<svg' "$temp_file"
+
+          mv "$temp_file" github-metrics/activity-graph.svg
+
+      - name: Commit activity graph
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add github-metrics/activity-graph.svg
+
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+
+          git commit -m "Update activity graph [skip ci]"
+          git push
