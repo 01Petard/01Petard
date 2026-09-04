@@ -264,7 +264,8 @@
           <img src="./github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" />
         </td>
         <td>
-          <img src="./github-metrics/languages.indepth.svg" alt="languages.indepth" />
+          <!-- <img src="./github-metrics/languages.indepth.svg" alt="languages.indepth" /> -->
+          <img src="https://raw.githubusercontent.com/01Petard/01Petard/778eb3a43d36c7d43218eaa436b6f9e194487004/github-metrics/languages.indepth.svg" alt="languages.indepth.static_bak" />
         </td>
       </tr>
     </table>
