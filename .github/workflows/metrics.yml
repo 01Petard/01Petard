@@ -1,273 +1,99 @@
-# GitHub 个人主页 Metrics 自动生成
+# GitHub 个人主页指标自动生成
 #
-# 主要生成：
-# 1. github-metrics/base.svg
-#    GitHub 基础信息、提交统计、仓库信息等
+# 生成文件：
+# - github-metrics/base.svg                    基础 GitHub 指标
+# - github-metrics/isocalendar.fullyear.svg    全年 3D Contribution Calendar
+# - github-metrics/languages.indepth.svg       编程语言统计（保留旧文件名以兼容 README）
+# - github-metrics/activity-graph.svg           Activity Graph
 #
-# 2. github-metrics/isocalendar.fullyear.svg
-#    全年 3D Contribution Calendar
-#
-# 3. github-metrics/languages.indepth.svg
-#    基于实际 Git commit 的语言统计
-#
-# 4. github-metrics/activity-graph.svg
-#    最近 GitHub Activity Graph
-#
-# Metrics 项目：
-# https://github.com/lowlighter/metrics
-#
-# Activity Graph 项目：
-# https://github.com/Ashutosh00710/github-readme-activity-graph
+# 依赖项目：
+# - https://github.com/lowlighter/metrics
+# - https://github.com/Ashutosh00710/github-readme-activity-graph
 
 name: GitHub Metrics
 
-
-# ============================================================
-# Workflow 触发条件
-# ============================================================
 on:
-
-  # 每天自动执行一次
-  #
-  # GitHub Actions 的 cron 使用 UTC 时间。
-  #
-  # 0 0 * * *
-  # 即 UTC 00:00
-  #
-  # 对应北京时间 UTC+8：
-  # 08:00
+  # GitHub Actions cron 使用 UTC；00:00 UTC = 北京时间 08:00。
   schedule:
     - cron: "0 0 * * *"
 
-  # 允许在 GitHub Actions 页面手动运行
   workflow_dispatch:
 
-  # 修改 main / master 后也执行
   push:
     branches:
-      - master
       - main
+    # 生成文件本身的提交无需再次触发工作流，避免无意义的重复运行。
+    paths-ignore:
+      - "github-metrics/**"
 
+# 防止定时任务、手动运行和 push 同时执行并竞争写入 main。
+concurrency:
+  group: github-metrics
+  cancel-in-progress: true
 
-# ============================================================
-# Jobs
-# ============================================================
 jobs:
-
-  # ==========================================================
-  # Job 1
-  #
-  # 使用 lowlighter/metrics 生成 GitHub Metrics
-  # ==========================================================
+  # ---------------------------------------------------------------------------
+  # lowlighter/metrics
+  # ---------------------------------------------------------------------------
   github-metrics:
-
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
-    # 使用 GitHub Environment
+    # METRICS_TOKEN 当前通过 production Environment 提供。
     environment:
       name: production
 
-    # lowlighter/metrics 会把生成后的 SVG
-    # 自动 commit 回当前仓库，因此必须具有写权限
     permissions:
       contents: write
 
     steps:
-
-      # ======================================================
-      # 1. 基础 GitHub Metrics
-      # ======================================================
+      # 固定到当前已验证的 lowlighter/metrics 提交，避免 @latest 无提示变更行为。
+      # 对应当前运行版本 3.34.0；升级时应先手动验证再更新 SHA。
       - name: Base metrics
-        uses: lowlighter/metrics@latest
-
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
         with:
-
-          # --------------------------------------------------
-          # 输出文件
-          # --------------------------------------------------
           filename: github-metrics/base.svg
-
-          # --------------------------------------------------
-          # GitHub Personal Access Token
-          #
-          # Repository：
-          # Settings
-          # -> Secrets and variables
-          # -> Actions
-          # -> METRICS_TOKEN
-          # --------------------------------------------------
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # GitHub 用户名
           user: 01Petard
-
-          # 使用经典模板
           template: classic
-
-          # 时区
           config_timezone: Asia/Shanghai
-
-          # --------------------------------------------------
-          # 基础模块
-          #
-          # header
-          #   用户基本信息
-          #
-          # activity
-          #   GitHub Activity
-          #
-          # community
-          #   社区数据
-          #
-          # repositories
-          #   仓库统计
-          # --------------------------------------------------
           base: "header, activity, community, repositories"
 
-          # --------------------------------------------------
-          # Repository Traffic
-          #
-          # 当前关闭。
-          #
-          # 你之前的 Action 日志中出现：
-          #
-          # Insufficient token scopes
-          #
-          # lowlighter/metrics 的 traffic 插件需要 PAT
-          # 具有足够的 repo 权限。
-          #
-          # 如果以后重新生成 METRICS_TOKEN，
-          # 并给 classic PAT 添加 repo scope，
-          # 可以改回：
-          #
-          # plugin_traffic: yes
-          # --------------------------------------------------
+          # Traffic 需要更高的 PAT 权限；当前明确关闭。
           plugin_traffic: no
-
-          # --------------------------------------------------
-          # Lines of code changed
-          #
-          # 统计代码增加 / 删除情况
-          # --------------------------------------------------
           plugin_lines: yes
-
-          # --------------------------------------------------
-          # Introduction
-          # --------------------------------------------------
           plugin_introduction: yes
 
-          # --------------------------------------------------
-          # Gists
-          #
-          # 当前不显示
-          # --------------------------------------------------
-          plugin_gists: no
+          # 插件异常时直接失败，避免提交残缺 SVG。
+          plugins_errors_fatal: yes
+          committer_message: "chore: update GitHub metrics [skip ci]"
 
-
-      # ======================================================
-      # 2. 全年 3D Contribution Calendar
-      # ======================================================
       - name: Full-year contribution calendar
-        uses: lowlighter/metrics@latest
-
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
         with:
-
-          # 输出文件
           filename: github-metrics/isocalendar.fullyear.svg
-
-          # GitHub Token
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # 不显示默认基础模块
-          # 这里只需要日历
+          user: 01Petard
           base: ""
 
-          # 开启 Isometric Calendar
           plugin_isocalendar: yes
-
-          # 显示完整一年
           plugin_isocalendar_duration: full-year
 
+          plugins_errors_fatal: yes
+          committer_message: "chore: update GitHub metrics [skip ci]"
 
-      # ======================================================
-      # 3. 编程语言统计
-      #
-      # 使用 indepth 模式：
-      #
-      # Metrics 会：
-      #
-      # 1. Clone GitHub 仓库
-      # 2. 分析 Git commit
-      # 3. 根据 commit author 找属于你的提交
-      # 4. 分析实际修改过的文件
-      # 5. 使用 Linguist 判断编程语言
-      #
-      # 比单纯按照仓库总语言占比更准确。
-      # ======================================================
-      - name: Languages indepth analysis
-        uses: lowlighter/metrics@latest
-
+      - name: Languages
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
         with:
-
-          # --------------------------------------------------
-          # 输出文件
-          # --------------------------------------------------
+          # 保留历史文件名，避免同步修改 README；实际已不使用 indepth 模式。
           filename: github-metrics/languages.indepth.svg
-
-          # GitHub Token
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # 明确指定目标 GitHub 用户
           user: 01Petard
-
-          # 不显示默认基础模块
           base: ""
 
-          # --------------------------------------------------
-          # 非常重要：
-          #
-          # 指定哪些 Git commit author 属于你。
-          #
-          # 你的公开仓库里目前至少存在：
-          #
-          # GitHub Username：
-          # 01Petard
-          #
-          # Git Author：
-          # huangzexiao
-          #
-          # Git Email：
-          # 1520394133@qq.com
-          #
-          # 如果不加这里，indepth 模式可能 Clone 到仓库，
-          # 但无法识别哪些 Commit 是你的，
-          # 最终生成：
-          #
-          # 0 Languages
-          # No push activity found
-          # --------------------------------------------------
-          commits_authoring: >-
-            01Petard,
-            huangzexiao,
-            1520394133@qq.com
-
-          # --------------------------------------------------
-          # 开启 Languages 插件
-          # --------------------------------------------------
           plugin_languages: yes
 
-          # --------------------------------------------------
-          # 忽略不想统计的语言
-          #
-          # 这里主要过滤：
-          #
-          # HTML
-          # CSS
-          # Shell
-          # Dockerfile
-          # Makefile
-          # 等辅助性语言
-          # --------------------------------------------------
+          # 过滤不希望计入个人主要技术栈的辅助语言。
           plugin_languages_ignored: >-
             html,
             css,
@@ -280,81 +106,34 @@ jobs:
             cmake,
             shell,
             gnuplot
-            
-          # 排除大型图片 / 数据 / 模型类仓库，
-          # 避免 indepth 遍历巨大 Git patch 导致 Node/V8 崩溃
+
+          # 排除以图片、数据或模型资源为主的大仓库，避免体积对统计造成明显干扰。
           plugin_languages_skipped: >-
             01Petard/imageURL,
             01Petard/Picturesque-Zhejiang,
             01Petard/1.FaceRecognition
 
-            
-          # 不再启用逐 commit 深度分析
+          # 不启用逐 commit 深度分析。
+          # 该模式曾在当前账号上触发 V8 崩溃，并可能产生 0 Languages 空结果。
           plugin_languages_indepth: no
 
-          # --------------------------------------------------
-          # 显示额外信息
-          #
-          # lines：
-          # 实际代码行数
-          #
-          # bytes-size：
-          # 修改代码字节大小
-          # --------------------------------------------------
-          plugin_languages_details: lines, bytes-size
-
-          # 最多展示 5 种语言
+          # 非 indepth 模式没有可靠的逐提交行数统计，因此只展示占比和字节大小。
+          plugin_languages_details: percentage, bytes-size
           plugin_languages_limit: 5
 
-          # --------------------------------------------------
-          # 如果 Languages 插件真正出现异常
-          # 直接让 Action 失败。
-          #
-          # 防止出现：
-          #
-          # Action 是绿色
-          # 但是实际生成的是残缺 SVG
-          # --------------------------------------------------
           plugins_errors_fatal: yes
+          committer_message: "chore: update GitHub metrics [skip ci]"
 
-
-  # ==========================================================
-  # Job 2
-  #
+  # ---------------------------------------------------------------------------
   # Activity Graph
   #
-  # 原方案：
-  #
-  # curl
-  # https://github-readme-activity-graph.vercel.app/graph
-  #
-  # 当前该公共 Vercel Deployment 返回 HTTP 402。
-  #
-  # 因此改为：
-  #
-  # 1. Clone github-readme-activity-graph
-  # 2. npm ci
-  # 3. npm build
-  # 4. 本地启动服务
-  # 5. localhost 调 /graph
-  # 6. 保存 SVG
-  # 7. Commit 到当前仓库
-  #
-  # 这样就不依赖上游 Vercel 服务。
-  # ==========================================================
+  # 公共 Vercel 服务当前不可依赖，因此固定上游源码版本，在 Runner 内构建并调用。
+  # 与 github-metrics 串行执行，避免两个 Job 同时向 main 推送。
+  # ---------------------------------------------------------------------------
   activity-graph:
-
-    # 必须等待 Metrics 完成。
-    #
-    # 原因：
-    # github-metrics Job 会向 main 分支提交 SVG。
-    #
-    # 等它完成后，再 Checkout 最新 main，
-    # 可以减少两个 Job 同时 push 导致冲突的概率。
-    needs:
-      - github-metrics
-
+    needs: github-metrics
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     environment:
       name: production
@@ -362,202 +141,106 @@ jobs:
     permissions:
       contents: write
 
-    steps:
+    env:
+      ACTIVITY_GRAPH_DIR: /tmp/github-readme-activity-graph
+      # 固定上游源码版本，避免默认分支变化导致构建结果不可复现。
+      ACTIVITY_GRAPH_SHA: 0962e9461de815933d462e8b98c7ce566cada8fb
 
-      # ======================================================
-      # Checkout 当前 README 仓库
-      # ======================================================
+    steps:
       - name: Checkout
         uses: actions/checkout@v5
-
         with:
-
-          # 明确使用 main 分支
           ref: main
+          fetch-depth: 1
 
-
-      # ======================================================
-      # Clone、构建并启动 Activity Graph
-      # ======================================================
       - name: Build activity graph service
         shell: bash
-
-        # github-readme-activity-graph 内部
-        # 使用 process.env.TOKEN 请求 GitHub GraphQL API
-        env:
-          TOKEN: ${{ secrets.METRICS_TOKEN }}
-
         run: |
           set -euo pipefail
 
-          # --------------------------------------------------
-          # Clone Activity Graph 源码
-          #
-          # 使用 depth=1，
-          # 因为这里只需要运行最新版本，
-          # 不需要历史 Git 数据。
-          # --------------------------------------------------
-          git clone \
-            --depth 1 \
-            https://github.com/Ashutosh00710/github-readme-activity-graph.git \
-            /tmp/github-readme-activity-graph
+          rm -rf "$ACTIVITY_GRAPH_DIR"
+          git init "$ACTIVITY_GRAPH_DIR"
+          git -C "$ACTIVITY_GRAPH_DIR" remote add origin \
+            https://github.com/Ashutosh00710/github-readme-activity-graph.git
+          git -C "$ACTIVITY_GRAPH_DIR" fetch --depth 1 origin "$ACTIVITY_GRAPH_SHA"
+          git -C "$ACTIVITY_GRAPH_DIR" checkout --detach FETCH_HEAD
 
-          cd /tmp/github-readme-activity-graph
-
-          # --------------------------------------------------
-          # 根据 package-lock.json 安装固定版本依赖
-          # --------------------------------------------------
+          cd "$ACTIVITY_GRAPH_DIR"
           npm ci
-
-          # --------------------------------------------------
-          # TypeScript 编译
-          #
-          # 本质执行：
-          #
-          # tsc
-          # --------------------------------------------------
           npm run build
 
-
-      # ======================================================
-      # 启动服务并生成 Activity Graph
-      # ======================================================
       - name: Generate activity graph
         shell: bash
-
         env:
           TOKEN: ${{ secrets.METRICS_TOKEN }}
-
         run: |
           set -euo pipefail
 
-          # SVG 输出目录
           mkdir -p "$GITHUB_WORKSPACE/github-metrics"
+          cd "$ACTIVITY_GRAPH_DIR"
 
-          cd /tmp/github-readme-activity-graph
-
-          # --------------------------------------------------
-          # 后台启动 Express 服务
-          #
-          # 项目默认：
-          #
-          # PORT=5100
-          #
-          # 将日志保存起来，
-          # 如果启动失败可以直接输出。
-          # --------------------------------------------------
           PORT=5100 npm start > /tmp/activity-graph.log 2>&1 &
-
           server_pid=$!
 
-          # --------------------------------------------------
-          # Workflow 结束时关闭 Node 服务
-          # --------------------------------------------------
           cleanup() {
             kill "$server_pid" 2>/dev/null || true
           }
-
           trap cleanup EXIT
 
-          # --------------------------------------------------
-          # 等待 Activity Graph 服务启动
-          #
-          # 最多等待 30 秒
-          # --------------------------------------------------
+          # 最多等待 30 秒；进程提前退出时直接打印日志失败。
           for i in {1..30}; do
-
-            if curl \
-              --fail \
-              --silent \
-              "http://127.0.0.1:5100/" \
-              > /dev/null; then
-
+            if curl --fail --silent "http://127.0.0.1:5100/" > /dev/null; then
               echo "Activity Graph service started."
               break
             fi
 
+            if ! kill -0 "$server_pid" 2>/dev/null; then
+              echo "Activity Graph service exited unexpectedly."
+              cat /tmp/activity-graph.log
+              exit 1
+            fi
+
             if [ "$i" -eq 30 ]; then
-              echo "Activity Graph service failed to start."
+              echo "Activity Graph service failed to start within 30 seconds."
               cat /tmp/activity-graph.log
               exit 1
             fi
 
             sleep 1
-
           done
 
-          # --------------------------------------------------
-          # 创建临时输出文件
-          # --------------------------------------------------
           temp_file="$(mktemp)"
-
-          # --------------------------------------------------
-          # 从本地 Activity Graph 服务获取 SVG
-          #
-          # theme=github-compact
-          # 与你原来的样式保持一致
-          # --------------------------------------------------
           curl \
             --fail \
             --silent \
             --show-error \
+            --retry 3 \
+            --retry-delay 1 \
             "http://127.0.0.1:5100/graph?username=01Petard&theme=github-compact" \
             -o "$temp_file"
 
-          # --------------------------------------------------
-          # 简单校验返回内容确实是 SVG
-          #
-          # 防止服务虽然返回 200，
-          # 实际返回的是 HTML / JSON 错误页面。
-          # --------------------------------------------------
+          # 避免 HTTP 200 但实际返回空内容或错误页面。
+          test -s "$temp_file"
           grep -q '<svg' "$temp_file"
 
-          # --------------------------------------------------
-          # 写入最终位置
-          # --------------------------------------------------
-          mv \
-            "$temp_file" \
-            "$GITHUB_WORKSPACE/github-metrics/activity-graph.svg"
+          mv "$temp_file" "$GITHUB_WORKSPACE/github-metrics/activity-graph.svg"
 
-
-      # ======================================================
-      # 将 Activity Graph Commit 回当前仓库
-      # ======================================================
       - name: Commit activity graph
         shell: bash
-
         run: |
           set -euo pipefail
 
-          # GitHub Actions Bot 身份
-          git config \
-            user.name \
-            "github-actions[bot]"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git config \
-            user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # 添加生成后的 SVG
+          # 吸收运行期间可能出现的 main 更新，再提交生成文件。
+          git pull --rebase origin main
           git add github-metrics/activity-graph.svg
 
-          # --------------------------------------------------
-          # SVG 没有变化时直接结束
-          #
-          # 避免每天制造没有意义的 Commit
-          # --------------------------------------------------
           if git diff --cached --quiet; then
             echo "Activity graph has no changes."
             exit 0
           fi
 
-          # --------------------------------------------------
-          # [skip ci]
-          #
-          # 避免这个自动提交再次触发 Workflow，
-          # 导致循环执行。
-          # --------------------------------------------------
-          git commit \
-            -m "Update activity graph [skip ci]"
-
-          git push
+          git commit -m "chore: update activity graph [skip ci]"
+          git push origin main
