@@ -280,7 +280,15 @@ jobs:
             cmake,
             shell,
             gnuplot
+            
+          # 排除大型图片 / 数据 / 模型类仓库，
+          # 避免 indepth 遍历巨大 Git patch 导致 Node/V8 崩溃
+          plugin_languages_skipped: >-
+            01Petard/imageURL,
+            01Petard/Picturesque-Zhejiang,
+            01Petard/1.FaceRecognition
 
+            
           # --------------------------------------------------
           # 开启深入分析模式
           #
@@ -299,8 +307,8 @@ jobs:
           # --------------------------------------------------
           plugin_languages_details: lines, bytes-size
 
-          # 最多展示 4 种语言
-          plugin_languages_limit: 4
+          # 最多展示 6 种语言
+          plugin_languages_limit: 6
 
           # --------------------------------------------------
           # 整体语言分析最长允许 60 秒
