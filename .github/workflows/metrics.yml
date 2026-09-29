@@ -3,7 +3,6 @@
 # 生成文件：
 # - github-metrics/base.svg                    基础 GitHub 指标
 # - github-metrics/isocalendar.fullyear.svg    全年 3D Contribution Calendar
-# - github-metrics/languages.indepth.svg       编程语言统计（保留旧文件名以兼容 README）
 # - github-metrics/activity-graph.svg           Activity Graph
 #
 # 依赖项目：
@@ -78,48 +77,6 @@ jobs:
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-          plugins_errors_fatal: yes
-          committer_message: "chore: update GitHub metrics [skip ci]"
-
-      - name: Languages
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
-        with:
-          # 保留历史文件名，避免同步修改 README；实际已不使用 indepth 模式。
-          filename: github-metrics/languages.indepth.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: 01Petard
-          base: ""
-
-          plugin_languages: yes
-
-          # 过滤不希望计入个人主要技术栈的辅助语言。
-          plugin_languages_ignored: >-
-            html,
-            css,
-            tex,
-            less,
-            dockerfile,
-            makefile,
-            qmake,
-            lex,
-            cmake,
-            shell,
-            gnuplot
-
-          # 排除以图片、数据或模型资源为主的大仓库，避免体积对统计造成明显干扰。
-          plugin_languages_skipped: >-
-            01Petard/imageURL,
-            01Petard/Picturesque-Zhejiang,
-            01Petard/1.FaceRecognition
-
-          # 不启用逐 commit 深度分析。
-          # 该模式曾在当前账号上触发 V8 崩溃，并可能产生 0 Languages 空结果。
-          plugin_languages_indepth: no
-
-          # 非 indepth 模式没有可靠的逐提交行数统计，因此只展示占比和字节大小。
-          plugin_languages_details: percentage, bytes-size
-          plugin_languages_limit: 5
 
           plugins_errors_fatal: yes
           committer_message: "chore: update GitHub metrics [skip ci]"

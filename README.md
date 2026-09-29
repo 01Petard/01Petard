@@ -251,21 +251,15 @@
   <!-- ########################################## 分割 ########################################## -->
   <img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
 
-  <!-- metrics 基础资料 -->
-  <div align="center">
-    <img src="./github-metrics/base.svg" alt="基本信息"/>
-  </div>
-
   <div align="center">
     <!-- GitHub metrics 信息指标 -->
     <table>
       <tr>
         <td>
-          <img src="./github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" />
+          <img src="./github-metrics/base.svg" alt="基本信息" />
         </td>
         <td>
-          <img src="./github-metrics/languages.indepth.svg" alt="languages.indepth" />
-          <!-- <img src="https://raw.githubusercontent.com/01Petard/01Petard/778eb3a43d36c7d43218eaa436b6f9e194487004/github-metrics/languages.indepth.svg" alt="languages.indepth.static_bak" /> -->
+          <img src="./github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" />
         </td>
       </tr>
     </table>
