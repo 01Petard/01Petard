@@ -1,6 +1,6 @@
 <div align="center"> 
   <!-- 顶部图 -->
-  <img width=100% src="./img/header.svg" alt="头部图" />
+  <img width=100% src="./img/header_brandnew.svg" alt="头部图" />
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
     <a href="https://github.com/01Petard">
@@ -251,6 +251,9 @@
   <!-- ########################################## 分割 ########################################## -->
   <img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
 
+	<!-- GitHub Activity Graph GitHub 活动图 -->
+<img src="./github-metrics/activity-graph.svg" alt="github activity graph" />
+
   <div align="center">
     <!-- GitHub metrics 信息指标 -->
     <table>
@@ -264,11 +267,6 @@
       </tr>
     </table>
   </div>
-
-<!-- GitHub Activity Graph GitHub 活动图 -->
-<!-- <img src="https://github-readme-activity-graph.vercel.app/graph?username=01Petard&theme=github-compact" alt="github activity graph" /> -->
-<!-- <img src="./github-metrics/activity-graph.svg" alt="github activity graph" /> -->
-
 <div>
-<img width=100% src="./img/footer.svg" alt="尾部图"/>
+<img width=100% src="./img/footer_brandnew.svg" alt="尾部图"/>
 </div>

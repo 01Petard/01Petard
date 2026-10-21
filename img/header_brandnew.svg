@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="180" viewBox="0 0 854 180" role="img" aria-label="Animated blue and white geometric GitHub banner for 01Petard">
+  <style>
+  .float-a { animation: float-a 8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .float-b { animation: float-b 10s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .float-c { animation: float-c 12s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .float-d { animation: float-d 7.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .twinkle { animation: twinkle 4.2s ease-in-out infinite; }
+  .twinkle-alt { animation: twinkle 5.6s ease-in-out infinite -2.1s; }
+  .brand { font: 800 59px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; letter-spacing: -2.2px; }
+  .foot-main { font: 700 24px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; letter-spacing: 2.0px; }
+  .tag { font: 600 10.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; letter-spacing: 3px; }
+  .foot-tag { font: 500 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; letter-spacing: 2px; }
+  @keyframes float-a { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(2px, -6px) rotate(4deg); } }
+  @keyframes float-b { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(-5px, 4px) rotate(-5deg); } }
+  @keyframes float-c { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(5px, 4px) rotate(3deg); } }
+  @keyframes float-d { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(-3px, -4px) rotate(-4deg); } }
+  @keyframes twinkle { 0%,100% {opacity: .42;} 50% {opacity: 1;} }
+  @media (prefers-reduced-motion: reduce) {
+    .float-a, .float-b, .float-c, .float-d, .twinkle, .twinkle-alt { animation: none; }
+  }
+</style>
+  
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12B3FF"/>
+      <stop offset="100%" stop-color="#008DEA"/>
+    </linearGradient>
+    <linearGradient id="lightblue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ADEFF"/>
+      <stop offset="100%" stop-color="#0AA6FB"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#70D2FF" stop-opacity=".15"/>
+      <stop offset="50%" stop-color="#26B3FC" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#009BFA" stop-opacity=".06"/>
+    </linearGradient>
+    <pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.55" fill="#fff" opacity=".66"/>
+    </pattern>
+    <pattern id="dots-small" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".85" fill="#fff" opacity=".78"/>
+    </pattern>
+    <clipPath id="circle-cut"><circle cx="0" cy="0" r="31"/></clipPath>
+    <clipPath id="tile-cut"><rect x="-38" y="-34" width="76" height="68" rx="11"/></clipPath>
+    <clipPath id="tri-cut"><path d="M-40 32 Q-44 27-39 18 L-5-41 Q0-50 8-37 L43 25 Q49 35 38 37 L-29 37 Q-35 37-40 32Z"/></clipPath>
+    <clipPath id="blob-cut"><path d="M-70-40 C-48-57-15-44 19-45 S79-34 80 0 S61 46 19 50 S-47 40-66 29 S-78-16-70-40Z"/></clipPath>
+    <g id="marble">
+      <circle r="31" fill="url(#blue)"/>
+      <g clip-path="url(#circle-cut)">
+        <ellipse cx="19" cy="-19" rx="32" ry="27" fill="url(#dots)" opacity=".92"/>
+        <path d="M-34 13 Q-8 43 33 12" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M-28 20 Q-4 44 24 24" fill="none" stroke="#B9EBFF" stroke-width="1.3" opacity=".85"/>
+      </g>
+    </g>
+    <g id="tile">
+      <rect x="-38" y="-34" width="76" height="68" rx="11" fill="url(#blue)"/>
+      <g clip-path="url(#tile-cut)">
+        <ellipse cx="-28" cy="27" rx="47" ry="45" fill="url(#dots)" opacity=".9"/>
+        <path d="M-15-50 C-26-22-3-2 1 12 S8 35 21 49" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round"/>
+        <path d="M-24-39 C-36-18-18-2-11 9" fill="none" stroke="#9EE7FF" stroke-width="1.6" opacity=".7"/>
+      </g>
+    </g>
+    <g id="triangle">
+      <path d="M-40 32 Q-44 27-39 18 L-5-41 Q0-50 8-37 L43 25 Q49 35 38 37 L-29 37 Q-35 37-40 32Z" fill="url(#blue)"/>
+      <g clip-path="url(#tri-cut)">
+        <ellipse cx="-27" cy="34" rx="38" ry="32" fill="url(#dots-small)"/>
+        <path d="M31-46 Q-5-15 5 7 T23 49" fill="none" stroke="#fff" stroke-width="4.3" stroke-linecap="round"/>
+      </g>
+    </g>
+    <g id="blob">
+      <path d="M-70-40 C-48-57-15-44 19-45 S79-34 80 0 S61 46 19 50 S-47 40-66 29 S-78-16-70-40Z" fill="url(#blue)"/>
+      <g clip-path="url(#blob-cut)">
+        <ellipse cx="-57" cy="-37" rx="69" ry="44" fill="url(#dots)" opacity=".75"/>
+        <path d="M-92 30 C-31-10-7-2 31-30 S67-49 93-24" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+        <path d="M-91 40 C-34 6-5 3 28-20" fill="none" stroke="#B7EBFF" stroke-width="2" opacity=".65"/>
+      </g>
+    </g>
+    <g id="chip">
+      <rect x="-11" y="-10" width="22" height="20" rx="4" fill="url(#blue)"/>
+      <g transform="rotate(-18)">
+        <rect x="-13" y="1" width="26" height="7" fill="url(#dots-small)" opacity=".65"/>
+        <path d="M-8-12 Q-1 0 9 12" fill="none" stroke="#fff" stroke-width="2.2"/>
+      </g>
+    </g>
+    <g id="shard">
+      <path d="M-13 11 L-2-15 Q0-18 5-12 L17 7 Q21 14 12 15L-9 16Q-16 16-13 11Z" fill="url(#blue)"/>
+      <path d="M1-15 Q-9 0-2 15" fill="none" stroke="#fff" stroke-width="2.3" opacity=".9"/>
+    </g>
+  </defs>
+
+  <rect width="854" height="180" fill="#ffffff"/>
+  <g aria-hidden="true">
+<g transform="translate(-18 -20) rotate(-28) scale(1.0)" opacity="0.95"><g class="float-b"><use href="#blob"/></g></g>
+<g transform="translate(204 3) rotate(23) scale(0.89)" opacity="1"><g class="float-a"><use href="#triangle"/></g></g>
+<g transform="translate(332 5) rotate(14) scale(0.68)" opacity="1"><g class="float-c"><use href="#marble"/></g></g>
+<g transform="translate(410 16) rotate(23) scale(0.55)" opacity="0.72"><g class="float-d"><use href="#chip"/></g></g>
+<g transform="translate(610 -15) rotate(-23) scale(1.03)" opacity="1"><g class="float-b"><use href="#tile"/></g></g>
+<g transform="translate(781 20) rotate(-13) scale(0.93)" opacity="1"><g class="float-c"><use href="#marble"/></g></g>
+<g transform="translate(858 5) rotate(18) scale(1.11)" opacity="0.94"><g class="float-a"><use href="#blob"/></g></g>
+<g transform="translate(54 93) rotate(-25) scale(0.64)" opacity="1"><g class="float-c"><use href="#marble"/></g></g>
+<g transform="translate(130 109) rotate(48) scale(0.82)" opacity="1"><g class="float-d"><use href="#shard"/></g></g>
+<g transform="translate(-19 171) rotate(15) scale(1.46)" opacity="1"><g class="float-b"><use href="#tile"/></g></g>
+<g transform="translate(235 154) rotate(-11) scale(0.75)" opacity="1"><g class="float-a"><use href="#chip"/></g></g>
+<g transform="translate(300 205) rotate(-17) scale(0.95)" opacity="1"><g class="float-d"><use href="#triangle"/></g></g>
+<g transform="translate(557 152) rotate(-8) scale(0.61)" opacity="1"><g class="float-b"><use href="#shard"/></g></g>
+<g transform="translate(561 197) rotate(30) scale(0.65)" opacity="1"><g class="float-a"><use href="#marble"/></g></g>
+<g transform="translate(665 159) rotate(-15) scale(0.86)" opacity="1"><g class="float-b"><use href="#tile"/></g></g>
+<g transform="translate(802 93) rotate(22) scale(0.55)" opacity="1"><g class="float-c"><use href="#chip"/></g></g>
+<g transform="translate(863 179) rotate(-18) scale(1.12)" opacity="1"><g class="float-a"><use href="#blob"/></g></g>
+<g transform="translate(793 135) rotate(10) scale(0.42)" opacity="0.83"><g class="float-d"><use href="#shard"/></g></g>
+<g transform="translate(152 37) rotate(-10) scale(0.28)" opacity="0.68"><g class="float-b"><use href="#chip"/></g></g>
+<circle class="twinkle" cx="279" cy="61" r="2.3" fill="#059FF4" opacity="0.8"/>
+<circle class="twinkle-alt" cx="586" cy="91" r="2.5" fill="#059FF4" opacity="0.8"/>
+<circle class="twinkle" cx="723" cy="62" r="1.5" fill="#059FF4" opacity="0.6"/>
+<circle class="twinkle-alt" cx="178" cy="169" r="1.8" fill="#059FF4" opacity="0.7"/>
+<text x="427" y="95" text-anchor="middle" class="brand" fill="#039CF2">01Petard</text>
+<path d="M364 107 Q427 112 490 107" fill="none" stroke="#D6F1FF" stroke-width="1.2" opacity=".8"/>
+<text x="427" y="129" text-anchor="middle" class="tag" fill="#85BCD9">BUILD · EXPLORE · CREATE</text>
+  </g>
+</svg>
