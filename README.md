@@ -250,9 +250,9 @@
 
   <!-- ########################################## 分割 ########################################## -->
   <img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
-
-	<!-- GitHub Activity Graph GitHub 活动图 -->
-<img src="./github-metrics/activity-graph.svg" alt="github activity graph" />
+  
+  <!-- GitHub Activity Graph GitHub 活动图 -->
+  <img src="./github-metrics/activity-graph.svg" alt="github activity graph" />
 
   <div align="center">
     <!-- GitHub metrics 信息指标 -->
