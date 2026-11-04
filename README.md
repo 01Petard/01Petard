@@ -1,6 +1,6 @@
 <div align="center"> 
   <!-- 顶部图 -->
-  <img width=100% src="./img/header_brandnew.svg" alt="头部图" />
+  <img width=100% src="./img/header_colorful.svg" alt="头部图" />
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
     <a href="https://github.com/01Petard">
@@ -268,5 +268,5 @@
     </table>
   </div>
 <div>
-<img width=100% src="./img/footer_brandnew.svg" alt="尾部图"/>
+<img width=100% src="./img/footer_colorful.svg" alt="尾部图"/>
 </div>
