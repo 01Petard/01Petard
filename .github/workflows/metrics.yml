@@ -123,7 +123,14 @@ jobs:
           git -C "$ACTIVITY_GRAPH_DIR" checkout --detach FETCH_HEAD
 
           cd "$ACTIVITY_GRAPH_DIR"
-          npm ci
+
+          # 修复上游项目缺失的依赖锁定信息
+          npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+
+          # 使用修复后的锁文件安装依赖
+          npm ci --no-audit --no-fund
+
+          # 编译 TypeScript
           npm run build
 
       - name: Generate activity graph
