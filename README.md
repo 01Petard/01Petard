@@ -6,6 +6,8 @@
     &nbsp;·&nbsp;
     <a href="./README.zh-CN.md">简体中文</a>
     &nbsp;·&nbsp;
+    <a href="./README.zh-Hant.md">繁體中文</a>
+    &nbsp;·&nbsp;
     <a href="./README.ja.md">日本語</a>
   </p>
   <!-- dynamic typing effect 动态打字效果 -->
