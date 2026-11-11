@@ -1,6 +1,13 @@
 <div align="center"> 
   <!-- 顶部图 -->
-  <img width=100% src="./img/header_colorful.svg" alt="头部图" />
+  <img width=100% src="./img/header_colorful.svg" alt="Profile banner" />
+  <p align="center">
+    <strong>English</strong>
+    &nbsp;·&nbsp;
+    <a href="./README.zh-CN.md">简体中文</a>
+    &nbsp;·&nbsp;
+    <a href="./README.ja.md">日本語</a>
+  </p>
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
     <a href="https://github.com/01Petard">
@@ -19,30 +26,29 @@
   <!-- profile logo 个人资料徽标 -->
   <div>
     <a href="https://www.bugstack.top/">
-      <img src="https://img.shields.io/badge/Website-博客-E3023A?style=flat-square" alt="博客" />
+      <img src="https://img.shields.io/badge/Website-Blog-E3023A?style=flat-square" alt="Blog" />
     </a>&emsp;
     <a href="https://doc.bugstack.top/">
-      <img src="https://img.shields.io/badge/Doc-知识库-blue?style=flat-square" alt="知识库" />
+      <img src="https://img.shields.io/badge/Doc-Knowledge%20Base-blue?style=flat-square" alt="Knowledge Base" />
     </a>&emsp;
     <a href="https://fav.bugstack.top/">
-      <img src="https://img.shields.io/badge/Favorite-收藏夹-ffd542?style=flat-square" alt="收藏夹" />
+      <img src="https://img.shields.io/badge/Favorite-Bookmarks-ffd542?style=flat-square" alt="Bookmarks" />
     </a>&emsp;
     <a href="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/wechat.jpg">
-      <img src="https://img.shields.io/badge/WeChat-微信-07c160?style=flat-square" alt="微信" />
+      <img src="https://img.shields.io/badge/WeChat-07c160?style=flat-square" alt="WeChat" />
     </a>&emsp;
     <a href="https://space.bilibili.com/12764212">
-      <img src="https://img.shields.io/badge/Bilibili-B站-ff69b4?style=flat-square" alt="B站" />
+      <img src="https://img.shields.io/badge/Bilibili-ff69b4?style=flat-square" alt="Bilibili" />
     </a>&emsp;
     <!-- visitor -->
-    <img src="https://komarev.com/ghpvc/?username=01Petard&label=Views&color=orange&style=flat-square" alt="访问量统计" />&emsp;
+    <img src="https://komarev.com/ghpvc/?username=01Petard&label=Views&color=orange&style=flat-square" alt="Profile views" />&emsp;
 <table>
       <tr>
         <td>
           <h3>🤺 About Me</h3>
           <img align="right" width="80" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/jobs.png" />
-          <p>&emsp;&emsp;嗨，你好，我是小黄同学。热爱编程、数码、游戏。</p>
-          <p>&emsp;&emsp;热爱软件工程和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
-          <p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
+          <p>&emsp;&emsp;Hi, I'm Xiaohuang. I love programming, gadgets, and gaming.</p>
+          <p>&emsp;&emsp;I'm passionate about software engineering and internet technology, and I aspire to become a great developer.</p>
           <p>&emsp;&emsp;<strong>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong></p>
         </td>
       </tr>
@@ -52,47 +58,47 @@
           <ul>
             <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
             <li>
-              <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— now
+              <a href="http://ibj.zju.edu.cn/">Binjiang Institute of Zhejiang University</a> &emsp; 📌 2026.02 —— now
               <ul>
-                <li>岗位领域：AI应用、微电子、高端制造</li>
-                <li>工作岗位：大服务端架构、业务开发，项目管理</li>
-                <li>工作内容：参与并负责国内大客户信创项目，制定技术方案并保证实施，协助相关科研课题成果落地</li>
+                <li>Focus: AI applications, microelectronics, and advanced manufacturing</li>
+                <li>Role: Backend architecture, business application development, and project management</li>
+                <li>Responsibilities: Lead and contribute to projects using domestic IT platforms (Xinchuang) for major clients in China, define technical solutions and oversee implementation, and help turn research outcomes into practical applications</li>
               </ul>
             </li>
             <!-- <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202602112016407.png" />
             <li>
-              <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— 2026.03
+              <a href="https://www.shinemo.com/">Zhejiang Shinemo Technology Co., Ltd.</a> &emsp; 📌 2026.02 —— 2026.03
               <ul>
-                <li>岗位领域：大模型平台、跨境电商</li>
-                <li>工作岗位：后端开发</li>
-                <li>工作内容：参与公司的智能店铺、大模型编程平台项目的开发</li>
+                <li>Focus: Large language model platforms and cross-border e-commerce</li>
+                <li>Role: Backend development</li>
+                <li>Responsibilities: Contribute to the company's smart store and LLM-powered coding platform projects</li>
               </ul>
             </li> -->
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
+              <a href="https://www.airdoc.com/">Airdoc</a> &emsp; 📌 2025.07 —— 2026.01
               <ul>
-                <li>岗位领域：互联网、在线医疗</li>
-                <li>工作岗位：中后台业务开发、技术支持</li>
-                <li>工作内容：负责公司的大健康业务、数据中台的建设与维护、对接大客户方案</li>
+                <li>Focus: Internet services and digital healthcare</li>
+                <li>Role: Internal and administrative application development, and technical support</li>
+                <li>Responsibilities: Develop and maintain the company's healthcare applications and shared data platform, and coordinate technical solutions for major clients</li>
               </ul>
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
+              <a href="http://www.sunny-baer.com/">Ningbo Sunny Bär Automation Co., Ltd.</a> &emsp; 📌 2025.02 —— 2025.06
               <ul>
-                <li>岗位领域：汽车零部件、工业机器人</li>
-                <li>工作岗位：后端开发、服务器运维、信息化建设</li>
-                <li>工作内容：负责公司的信息化发展，承担数字化业务系统的建设与维护</li>
+                <li>Focus: Automotive components and industrial robotics</li>
+                <li>Role: Backend development, server operations, and enterprise digitalization</li>
+                <li>Responsibilities: Support the company's digital transformation by building and maintaining digital business systems</li>
               </ul>
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.10
+              <a href="http://www.cnstrong.cn/">Hangzhou Shiqiang Education Technology Co., Ltd.</a> &emsp; 📌 2024.05 —— 2024.10
               <ul>
-                <li>岗位领域：互联网、在线教育</li>
-                <li>工作岗位：后端开发</li>
-                <li>工作内容：参与Saas平台“乐课网”的功能板块的迭代开发</li>
+                <li>Focus: Internet services and online education</li>
+                <li>Role: Backend development</li>
+                <li>Responsibilities: Contribute to iterative feature development for the LeKe (乐课网) SaaS platform</li>
               </ul>
             </li>
           </ul>
@@ -116,7 +122,7 @@
 <div align="center" >
   <!--  skill badge 技能徽章 --> 
 </div>
-<h3>编程语言</h3>
+<h3>Programming Languages</h3>
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat-square" alt="HTML5 Badge"/>&nbsp;
   <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat-square" alt="CSS3 Badge"/>&nbsp;
@@ -129,7 +135,7 @@
   <!-- <img src="https://img.shields.io/badge/-Lua-2C2D72?&logo=Lua&logoColor=FFF&style=flat-square" alt="Lua" style="display: inline-block;" />&nbsp; -->
 </p>
 
-<h3>前端 & 后端</h3>
+<h3>Frontend & Backend</h3>
 <p>
   <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=FFF&style=flat-square" alt="Node.js Badge"/>&nbsp;
   <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat-square" alt="Vite Badge"/>&nbsp;
@@ -165,7 +171,7 @@
   <!-- <img src="https://img.shields.io/badge/-JustAuth-82C5D5?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAC1lBMVEUAAAAfluUXhecdkuUhm+QajeYgl+UkouMineQoqeMmpuMlouQhnOQhm+QXhuYdkuUkouMkouMjoOMWg+cSeugmpeMmpuMlo+Mhm+QkouMckOUelOUpq+IkouMReucpq+IoqeMReegReugjoOMinuQnp+MkoeMXhecgmeQlo+Mnp+MSeugfl+UjnuQQeOgeleUfleUjn+QlpOMUf+ckoeMReOginuQnp+MSe+chm+QmpOMoquIQd+gkoOMnp+MajeYUgOcinuQajeUlo+MhmuQkoOQkoeMQd+gfl+QinuQQdugkoeMoqeIVgecQdegWg+cTfechmuQhm+QQd+gbj+UQeOghm+QlpOMjn+Qlo+MYh+YXheYQdugmpeMPdegQd+gkoeMko+MbjuUlpeMWg+YZiuYgmeQpquIReecUfucQdugWhOYmpOMhnOQlo+MkoeMQd+geleQTfecjn+Mpq+IZiuYhnOQTfOcfluQnqOMZieYkoeMpq+IWg+cdkuUmpuMhmuQYieYjn+MmpOMWhOcgmuQfleQoqeIckeUhm+QTfOcXhuYlpOMgmOQWheYQdegTfuceleQhm+QdkuUbjuYkouMZieYelOUQd+gnqeIlo+MZi+YpquIXheYSe+gUfucQdugTfecoqeIdkuUUf+celOQkoOMdkuUTfOcckOUdkuUnqOIQd+ggmOQTfOcnp+Mai+YajOUpquIhmuQpq+Icj+UnqOMkoeMlouMZieYhm+QjnuMfmOQpquIQdegReOgbjuUhm+QQdugSeucYhuYTfOcYhuYbjuUVgecXheYmpuMjoOMjneMgmOQlo+Mhm+QnqOIhmuQfluQbjeUeleQlouMkouMdkuUZiOYcj+Uai+YckOUinuQoqeIUf+celOUnp+IWhOYoquIYh+YVgOcSfOcWg+YVgucTfeclpOMZiuYYhuYReecXheYRd+gSeucVgOYUgOd2RQ+cAAAAynRSTlMABxELCQQNek6ONSwd697Rx8CBbEI8Ghf79Ozr6uPh4NmslJSRh4eFbWljXUA5NTEnIyEXFPz79/Py8uzr6Obi29nY087Mw8CxrKCdm5qYjIN4c21saF9bQj46MzAwJx78+/r6+fj49/by8Ozs5d7e29vX08rGxcO/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&logoColor=000&style=flat-square" alt="JustAuth" style="display: inline-block;" />&nbsp; -->
 </p>
 
-<h3>数据库 & 存储</h3>
+<h3>Databases & Storage</h3>
 <p>
   <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=MySQL&logoColor=FFF&style=flat-square" alt="MySQL" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-MariaDB-003545?logo=MariaDB&logoColor=FFF&style=flat-square" alt="MariaDB" style="display: inline-block;" />&nbsp;
@@ -179,7 +185,7 @@
   <img src="https://img.shields.io/badge/-Liquibase-2962FF?logo=Liquibase&logoColor=FFF&style=flat-square" alt="Liquibase" style="display: inline-block;" />&nbsp;
 </p>
 
-<h3>消息 & 流处理</h3>
+<h3>Messaging & Stream Processing</h3>
 <p>
   <img src="https://img.shields.io/badge/-RabbitMQ-FF6600?logo=RabbitMQ&logoColor=FFF&style=flat-square" alt="RabbitMQ" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-RocketMQ-D77310?logo=Apache-RocketMQ&logoColor=FFF&style=flat-square" alt="RocketMQ" style="display: inline-block;" />&nbsp;
@@ -189,7 +195,7 @@
   <img src="https://img.shields.io/badge/MQTT-660066?logo=mqtt&logoColor=fff&style=flat-square" alt="MQTT" />&nbsp;
 </p>
 
-<h3>DevOps & 云原生</h3>
+<h3>DevOps & Cloud Native</h3>
 <p>
   <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=GitHub-Actions&logoColor=FFF&style=flat-square" alt="GitHub Actions" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Jenkins-D24939?logo=Jenkins&logoColor=FFF&style=flat-square" alt="Jenkins" style="display: inline-block;" />&nbsp;
@@ -199,7 +205,7 @@
   <img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=Kubernetes&logoColor=FFF&style=flat-square" alt="Kubernetes" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-CentOS-262577?logo=CentOS&logoColor=FFF&style=flat-square" alt="CentOS" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Ubuntu-E95420?logo=Ubuntu&logoColor=FFF&style=flat-square" alt="Ubuntu" style="display: inline-block;" />&nbsp;
-  <img src="https://img.shields.io/badge/-阿里云-FF6A00?logo=Alibaba-Cloud&logoColor=FFF&style=flat-square" alt="阿里云" style="display: inline-block;" />&nbsp;
+  <img src="https://img.shields.io/badge/-Alibaba%20Cloud-FF6A00?logo=Alibaba-Cloud&logoColor=FFF&style=flat-square" alt="Alibaba Cloud" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Nginx-009639?logo=Nginx&logoColor=FFF&style=flat-square" alt="Nginx" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-VMware-607078?logo=VMware&logoColor=FFF&style=flat-square" alt="VMware" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Prometheus-E6522C?logo=Prometheus&logoColor=FFF&style=flat-square" alt="Prometheus" style="display: inline-block;" />&nbsp;
@@ -207,7 +213,7 @@
   <img src="https://img.shields.io/badge/-Ansible-EE0000?logo=Ansible&logoColor=FFF&style=flat-square" alt="Ansible" style="display: inline-block;" />&nbsp;
 </p>
 
-<h3>工具 & 平台</h3>
+<h3>Tools & Platforms</h3>
 <p>
   <img src="https://img.shields.io/badge/-Logstash-005571?logo=Logstash&logoColor=FFF&style=flat-square" alt="Logstash" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Kibana-005571?logo=Kibana&logoColor=FFF&style=flat-square" alt="Kibana" style="display: inline-block;" />&nbsp;
@@ -259,7 +265,7 @@
     <table>
       <tr>
         <td>
-          <img src="./github-metrics/base.svg" alt="基本信息" />
+          <img src="./github-metrics/base.svg" alt="GitHub profile metrics" />
         </td>
         <td>
           <img src="./github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" />
@@ -268,5 +274,5 @@
     </table>
   </div>
 <div>
-<img width=100% src="./img/footer_colorful.svg" alt="尾部图"/>
+<img width=100% src="./img/footer_colorful.svg" alt="Profile footer"/>
 </div>
