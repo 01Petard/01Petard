@@ -58,7 +58,7 @@
           <ul>
             <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
             <li>
-              <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp; 📌 2026.02 —— now
+              <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— now
               <ul>
                 <li>分野：AI活用、マイクロエレクトロニクス、先端製造</li>
                 <li>担当：サーバーサイドのアーキテクチャ設計、業務アプリケーション開発、プロジェクト管理</li>
@@ -67,7 +67,7 @@
             </li>
             <!-- <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202602112016407.png" />
             <li>
-              <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp; 📌 2026.02 —— 2026.03
+              <a href="https://www.shinemo.com/">浙江讯盟科技有限公司</a> &emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— 2026.03
               <ul>
                 <li>分野：大規模言語モデルのプラットフォーム、越境EC</li>
                 <li>担当：バックエンド開発</li>
@@ -85,7 +85,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
-              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp; 📌 2025.02 —— 2025.06
+              <a href="http://www.sunny-baer.com/">宁波舜宇贝尔机器人有限公司</a> &emsp;&emsp; 📌 2025.02 —— 2025.06
               <ul>
                 <li>分野：自動車部品、産業用ロボット</li>
                 <li>担当：バックエンド開発、サーバー運用、社内IT基盤の整備</li>
@@ -94,7 +94,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp; 📌 2024.05 —— 2024.10
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.10
               <ul>
                 <li>分野：インターネットサービス、オンライン教育</li>
                 <li>担当：バックエンド開発</li>

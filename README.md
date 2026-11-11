@@ -58,7 +58,7 @@
           <ul>
             <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
             <li>
-              <a href="http://ibj.zju.edu.cn/">Binjiang Institute of Zhejiang University</a> &emsp; 📌 2026.02 —— now
+              <a href="http://ibj.zju.edu.cn/">Binjiang Institute of Zhejiang University</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp; 📌 2026.02 —— now
               <ul>
                 <li>Focus: AI applications, microelectronics, and advanced manufacturing</li>
                 <li>Role: Backend architecture, business application development, and project management</li>
@@ -76,7 +76,7 @@
             </li> -->
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">Airdoc</a> &emsp; 📌 2025.07 —— 2026.01
+              <a href="https://www.airdoc.com/">Beijing Airdoc Technology Co., Ltd.</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp;&thinsp; 📌 2025.07 —— 2026.01
               <ul>
                 <li>Focus: Internet services and digital healthcare</li>
                 <li>Role: Internal and administrative application development, and technical support</li>
@@ -85,7 +85,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190018492.png" />
-              <a href="http://www.sunny-baer.com/">Ningbo Sunny Bär Automation Co., Ltd.</a> &emsp; 📌 2025.02 —— 2025.06
+              <a href="http://www.sunny-baer.com/">Ningbo Sunny Bär Automation Co., Ltd.</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp; 📌 2025.02 —— 2025.06
               <ul>
                 <li>Focus: Automotive components and industrial robotics</li>
                 <li>Role: Backend development, server operations, and enterprise digitalization</li>
