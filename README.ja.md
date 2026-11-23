@@ -60,7 +60,7 @@
           <ul>
             <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
             <li>
-              <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— now
+              <a href="http://ibj.zju.edu.cn/">浙江大学滨江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.04 —— now
               <ul>
                 <li>分野：AI活用、マイクロエレクトロニクス、先端製造</li>
                 <li>担当：サーバーサイドのアーキテクチャ設計、業務アプリケーション開発、プロジェクト管理</li>
@@ -78,7 +78,7 @@
             </li> -->
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
+              <a href="https://www.airdoc.com/">北京鹰瞳科技发展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.03
               <ul>
                 <li>分野：インターネットサービス、オンライン医療</li>
                 <li>担当：社内業務・管理システムの開発、技術サポート</li>
@@ -96,7 +96,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.10
+              <a href="http://www.cnstrong.cn/">杭州施强教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.12
               <ul>
                 <li>分野：インターネットサービス、オンライン教育</li>
                 <li>担当：バックエンド開発</li>

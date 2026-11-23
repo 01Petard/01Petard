@@ -60,7 +60,7 @@
           <ul>
             <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
             <li>
-              <a href="http://ibj.zju.edu.cn/">Binjiang Institute of Zhejiang University</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp; 📌 2026.02 —— now
+              <a href="http://ibj.zju.edu.cn/">Binjiang Institute of Zhejiang University</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp; 📌 2026.04 —— now
               <ul>
                 <li>Focus: AI applications, microelectronics, and advanced manufacturing</li>
                 <li>Role: Backend architecture, business application development, and project management</li>
@@ -78,7 +78,7 @@
             </li> -->
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">Beijing Airdoc Technology Co., Ltd.</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp;&thinsp; 📌 2025.07 —— 2026.01
+              <a href="https://www.airdoc.com/">Beijing Airdoc Technology Co., Ltd.</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp;&thinsp; 📌 2025.07 —— 2026.03
               <ul>
                 <li>Focus: Internet services and digital healthcare</li>
                 <li>Role: Internal and administrative application development, and technical support</li>
@@ -96,7 +96,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">Hangzhou Shiqiang Education Technology Co., Ltd.</a> &emsp; 📌 2024.05 —— 2024.10
+              <a href="http://www.cnstrong.cn/">Hangzhou Shiqiang Education Technology Co., Ltd.</a> &emsp; 📌 2024.05 —— 2024.12
               <ul>
                 <li>Focus: Internet services and online education</li>
                 <li>Role: Backend development</li>

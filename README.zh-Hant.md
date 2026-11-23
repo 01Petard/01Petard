@@ -61,7 +61,7 @@
           <ul>
             <img align="right" width="68" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202608111122092.png" />
             <li>
-              <a href="http://ibj.zju.edu.cn/">浙江大學濱江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.02 —— now
+              <a href="http://ibj.zju.edu.cn/">浙江大學濱江研究院</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 📌 2026.04 —— now
               <ul>
                 <li>崗位領域：AI應用、微電子、高端製造</li>
                 <li>工作崗位：大服務端架構、業務開發，項目管理</li>
@@ -79,7 +79,7 @@
             </li> -->
             <img align="right" width="64" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202508190007652.png" />
             <li>
-              <a href="https://www.airdoc.com/">北京鷹瞳科技發展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.01
+              <a href="https://www.airdoc.com/">北京鷹瞳科技發展股份有限公司</a> &emsp; 📌 2025.07 —— 2026.03
               <ul>
                 <li>崗位領域：互聯網、在線醫療</li>
                 <li>工作崗位：中後台業務開發、技術支持</li>
@@ -97,7 +97,7 @@
             </li>
             <li>
               <img align="right" width="60" src="https://cdn.jsdelivr.net/gh/01Petard/imageURL@main/img/202503201550802.png" />
-              <a href="http://www.cnstrong.cn/">杭州施強教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.10
+              <a href="http://www.cnstrong.cn/">杭州施強教育科技有限公司</a> &emsp;&emsp;&emsp; 📌 2024.05 —— 2024.12
               <ul>
                 <li>崗位領域：互聯網、在線教育</li>
                 <li>工作崗位：後端開發</li>
